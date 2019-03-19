@@ -577,10 +577,16 @@ ol {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  left: 0;
   min-width: 30rem;
+  overflow: auto;
   position: fixed;
-  transform: translateX(-105%);
-  z-index: 100;
+  top: 0;
+  transform: translate3d(-400px, 0, 0);
+  transition: 0.5s;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */
+  z-index: 9999;
 }
 .mobile-nav .logo {
   font-size: 2.5rem;
@@ -599,6 +605,9 @@ ol {
 .mobile-nav .logo, .mobile-nav__link {
   color: #eee;
   padding: 1rem 3.2rem;
+}
+.mobile-nav--open {
+  transform: translateX(0);
 }
 
 .modal {
