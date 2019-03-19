@@ -132,135 +132,6 @@ h3 {
   }
 }
 
-.form-vertical {
-  margin-bottom: 2rem;
-  max-width: 48rem;
-}
-.form-vertical label {
-  font-weight: bold;
-}
-.form-vertical label,
-.form-vertical input,
-.form-vertical select,
-.form-vertical textarea {
-  display: block;
-  margin-bottom: 1.5rem;
-  width: 100%;
-}
-.form-vertical input:not([type=submit]):not([type=checkbox]):not([type=radio]),
-.form-vertical select,
-.form-vertical textarea {
-  border: 0.1rem solid #111;
-  border-radius: 0.5rem;
-  color: #111;
-  font-family: inherit;
-  font-size: 1.3rem;
-  height: 3.9rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  outline: none;
-  padding: 0.4rem 1rem;
-}
-.form-vertical input:not([type=submit]):not([type=checkbox]):not([type=radio]):focus,
-.form-vertical textarea:focus {
-  border: 0.1rem solid #003B6F;
-  outline: none;
-}
-.form-vertical textarea {
-  min-height: 20rem;
-  overflow: auto;
-  resize: none;
-}
-.form-vertical [type=checkbox],
-.form-vertical [type=checkbox] + label,
-.form-vertical [type=radio],
-.form-vertical [type=radio] + label {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-}
-.form-vertical [type=checkbox] {
-  appearance: none;
-  background: #eee;
-  border: 0.1rem solid #ccc;
-  height: 2rem;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  width: 2rem;
-}
-.form-vertical [type=checkbox]:focus {
-  outline: none;
-}
-.form-vertical [type=checkbox]:checked + label {
-  position: relative;
-}
-.form-vertical [type=checkbox]:checked + label::before, .form-vertical [type=checkbox]:checked + label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-}
-.form-vertical [type=checkbox]:checked + label::before {
-  background: #111;
-  border: 0.1rem solid;
-  height: 2rem;
-  left: -2.5rem;
-  width: 2rem;
-}
-.form-vertical [type=checkbox]:checked + label::after {
-  border-bottom: 0.2rem solid;
-  border-left: 0.2rem solid;
-  color: #eee;
-  height: 0.5rem;
-  left: -2rem;
-  top: 0.7rem;
-  transform: rotate(-45deg);
-  width: 0.9rem;
-}
-.form-vertical [type=radio] {
-  appearance: none;
-  background: #eee;
-  border: 0.1rem solid #ccc;
-  border-radius: 50%;
-  height: 2rem;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  width: 2rem;
-}
-.form-vertical [type=radio]:focus {
-  outline: none;
-}
-.form-vertical [type=radio]:checked + label {
-  position: relative;
-}
-.form-vertical [type=radio]:checked + label::before, .form-vertical [type=radio]:checked + label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-}
-.form-vertical [type=radio]:checked + label::before {
-  background: #111;
-  border: 0.1rem solid;
-  border-radius: 50%;
-  height: 2rem;
-  left: -2.5rem;
-  width: 2rem;
-}
-.form-vertical [type=radio]:checked + label::after {
-  background: #eee;
-  border: 0.3rem solid #eee;
-  border-radius: 50%;
-  color: #eee;
-  height: 0.8rem;
-  left: -1.9rem;
-  top: 0.6rem;
-  width: 0.8rem;
-}
-.form-vertical [type=submit] {
-  display: inline-block;
-  margin-top: 1rem;
-  width: auto;
-}
-
 button,
 .btn {
   background: #111;
@@ -485,6 +356,156 @@ table .btn {
   margin: 0;
 }
 
+.card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  margin: 0.75rem 0 1.5rem;
+  position: relative;
+  max-width: 35rem;
+}
+.card img {
+  border-radius: 0.2rem 0.2rem 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.card .card__body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-vertical {
+  margin-bottom: 2rem;
+  max-width: 48rem;
+}
+.form-vertical label {
+  font-weight: bold;
+}
+.form-vertical label,
+.form-vertical input,
+.form-vertical select,
+.form-vertical textarea {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.form-vertical input:not([type=submit]):not([type=checkbox]):not([type=radio]),
+.form-vertical select,
+.form-vertical textarea {
+  border: 0.1rem solid #111;
+  border-radius: 0.5rem;
+  color: #111;
+  font-family: inherit;
+  font-size: 1.3rem;
+  height: 3.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  outline: none;
+  padding: 0.4rem 1rem;
+}
+.form-vertical input:not([type=submit]):not([type=checkbox]):not([type=radio]):focus,
+.form-vertical textarea:focus {
+  border: 0.1rem solid #003B6F;
+  outline: none;
+}
+.form-vertical textarea {
+  min-height: 20rem;
+  overflow: auto;
+  resize: none;
+}
+.form-vertical [type=checkbox],
+.form-vertical [type=checkbox] + label,
+.form-vertical [type=radio],
+.form-vertical [type=radio] + label {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+.form-vertical [type=checkbox] {
+  appearance: none;
+  background: #eee;
+  border: 0.1rem solid #ccc;
+  height: 2rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+}
+.form-vertical [type=checkbox]:focus {
+  outline: none;
+}
+.form-vertical [type=checkbox]:checked + label {
+  position: relative;
+}
+.form-vertical [type=checkbox]:checked + label::before, .form-vertical [type=checkbox]:checked + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.form-vertical [type=checkbox]:checked + label::before {
+  background: #111;
+  border: 0.1rem solid;
+  height: 2rem;
+  left: -2.5rem;
+  width: 2rem;
+}
+.form-vertical [type=checkbox]:checked + label::after {
+  border-bottom: 0.2rem solid;
+  border-left: 0.2rem solid;
+  color: #eee;
+  height: 0.5rem;
+  left: -2rem;
+  top: 0.7rem;
+  transform: rotate(-45deg);
+  width: 0.9rem;
+}
+.form-vertical [type=radio] {
+  appearance: none;
+  background: #eee;
+  border: 0.1rem solid #ccc;
+  border-radius: 50%;
+  height: 2rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+}
+.form-vertical [type=radio]:focus {
+  outline: none;
+}
+.form-vertical [type=radio]:checked + label {
+  position: relative;
+}
+.form-vertical [type=radio]:checked + label::before, .form-vertical [type=radio]:checked + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.form-vertical [type=radio]:checked + label::before {
+  background: #111;
+  border: 0.1rem solid;
+  border-radius: 50%;
+  height: 2rem;
+  left: -2.5rem;
+  width: 2rem;
+}
+.form-vertical [type=radio]:checked + label::after {
+  background: #eee;
+  border: 0.3rem solid #eee;
+  border-radius: 50%;
+  color: #eee;
+  height: 0.8rem;
+  left: -1.9rem;
+  top: 0.6rem;
+  width: 0.8rem;
+}
+.form-vertical [type=submit] {
+  display: inline-block;
+  margin-top: 1rem;
+  width: auto;
+}
+
 img {
   display: block;
   height: auto;
@@ -521,34 +542,34 @@ img.img--zoom:hover {
   transform: scale(1.5);
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 2.5rem;
-  width: 100%;
+ul li,
+ol li {
+  margin-bottom: 1rem;
 }
-table th,
-table td {
-  border-bottom: 0.1rem solid #ddd;
-  padding: 0.6rem;
-  text-align: left;
+ul.collection,
+ol.collection {
+  background: #eee;
+  border: 0.1rem solid #111;
+  border-radius: 1rem;
+  list-style: none;
 }
-table th:first-child,
-table td:first-child {
-  padding-left: 0;
+ul.collection li,
+ol.collection li {
+  border-bottom: 0.1rem solid #111;
+  margin: 0;
+  padding: 1rem 2rem;
 }
-table tbody tr:hover {
-  background: #f8f8f8;
+ul.collection li:last-child,
+ol.collection li:last-child {
+  border-bottom: none;
 }
-table td:last-child {
-  white-space: nowrap;
-  width: 0.1%;
+
+ul {
+  list-style: circle inside;
 }
-table.tbl--striped tbody tr:nth-child(odd) {
-  background: #ddd;
-}
-table.tbl--striped tbody tr:hover {
-  background: #bbb;
+
+ol {
+  list-style: decimal inside;
 }
 
 .modal {
@@ -587,34 +608,40 @@ table.tbl--striped tbody tr:hover {
   position: relative;
 }
 
-ul li,
-ol li {
-  margin-bottom: 1rem;
+.navbar {
+  align-items: center;
+  background: #111;
+  display: flex;
+  height: 5rem;
+  padding: 0 2rem;
+  width: 100%;
+  z-index: 100;
 }
-ul.collection,
-ol.collection {
-  background: #eee;
-  border: 0.1rem solid #111;
-  border-radius: 1rem;
-  list-style: none;
+.navbar .btn-toggle {
+  color: #eee;
+  cursor: pointer;
+  display: none;
 }
-ul.collection li,
-ol.collection li {
-  border-bottom: 0.1rem solid #111;
-  margin: 0;
-  padding: 1rem 2rem;
+.navbar .logo {
+  font-size: 2.5rem;
+  margin-right: auto;
 }
-ul.collection li:last-child,
-ol.collection li:last-child {
-  border-bottom: none;
+.navbar .logo, .navbar__link {
+  color: #eee;
 }
-
-ul {
-  list-style: circle inside;
+.navbar__link {
+  margin: 0 2rem;
 }
-
-ol {
-  list-style: decimal inside;
+.navbar--fixed {
+  position: fixed;
+}
+@media (max-width: 37.5em) {
+  .navbar a:not(.logo) {
+    display: none;
+  }
+  .navbar .btn-toggle {
+    display: inline-block;
+  }
 }
 
 .panel {
@@ -651,25 +678,34 @@ ol {
   padding: 2rem;
 }
 
-.card {
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
-  margin: 0.75rem 0 1.5rem;
-  position: relative;
-  max-width: 35rem;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 2.5rem;
+  width: 100%;
 }
-.card img {
-  border-radius: 0.2rem 0.2rem 0 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+table th,
+table td {
+  border-bottom: 0.1rem solid #ddd;
+  padding: 0.6rem;
+  text-align: left;
 }
-.card .card__body {
-  padding: 2rem;
-  text-align: center;
+table th:first-child,
+table td:first-child {
+  padding-left: 0;
+}
+table tbody tr:hover {
+  background: #f8f8f8;
+}
+table td:last-child {
+  white-space: nowrap;
+  width: 0.1%;
+}
+table.tbl--striped tbody tr:nth-child(odd) {
+  background: #ddd;
+}
+table.tbl--striped tbody tr:hover {
+  background: #bbb;
 }
 
 /*# sourceMappingURL=defiant.css.map */

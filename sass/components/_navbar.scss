@@ -1,0 +1,34 @@
+.navbar {
+	align-items: center;
+	background: $colour-dark;
+	display: flex;
+	height: 5rem;
+	padding: 0 2rem;
+	width: 100%;
+	z-index: 100;
+
+	& .btn-toggle {
+		color: #eee;
+		cursor: pointer;
+		display: none;
+	}
+
+	& .logo {
+		font-size: 2.5rem;
+		margin-right: auto;
+	}
+
+	& .logo,
+	&__link { color: #eee; }
+
+	&__link {
+		margin: 0 2rem;
+	}
+
+	&--fixed { position: fixed; }
+
+	@include respond(phone) {
+		a:not(.logo) { display: none; }
+		& .btn-toggle { display: inline-block; }
+	}
+}
