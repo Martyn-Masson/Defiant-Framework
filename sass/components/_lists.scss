@@ -1,0 +1,21 @@
+ul,
+ol {
+	li { margin-bottom: 1rem; }
+
+	&.collection {
+		background: $colour-light;
+		border: .1rem solid $colour-dark;
+		border-radius: 1rem;
+		list-style: none;
+
+		li {
+			border-bottom: .1rem solid $colour-dark;
+			margin: 0;
+			padding: 1rem 2rem;
+		}
+		li:last-child { border-bottom: none; }
+	}
+}
+
+ul { list-style: circle inside; }
+ol { list-style: decimal inside; }

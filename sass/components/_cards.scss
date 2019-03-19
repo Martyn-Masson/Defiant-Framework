@@ -1,0 +1,32 @@
+.card {
+	background: #fff;
+	border-radius: .5rem;
+	box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .2);
+	margin: .75rem 0 1.5rem;
+	position: relative;
+	max-width: 35rem;
+
+	img {
+		border-radius: .2rem .2rem 0 0;
+		position: relative;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.card__body {
+		padding: 2rem;
+		text-align: center;
+	}
+
+	// &.card--horizontal {
+	// 	display: flex;
+	// 	justify-content: space-evenly;
+	// 	align-items: center;
+
+	// 	img {
+	// 		max-width: 50%;
+	// 	}
+	// }
+}

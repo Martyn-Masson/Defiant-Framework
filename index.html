@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Defiant CSS</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/defiant.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<!-- <div class="navigation">
+		<input type="checkbox" class="navigation__checkbox" id="navigation__toggle">
+		<label for="navigation__toggle" class="navigation__button">
+			<span class="navigation__icon">&nbsp;</span>
+		</label>
+		<div class="navigation__background">&nbsp;</div>
+		<nav class="navigation__nav">
+			<div class="navigation__list">
+				<a href="index.html" class="navigation__link">Home</a>
+				<a href="#grid" class="navigation__link">Grid System</a>
+				<a href="#typography" class="navigation__link">Typography</a>
+				<a href="#lists" class="navigation__link">Lists</a>
+				<a href="#images" class="navigation__link">Images</a>
+				<a href="#tables" class="navigation__link">Tables</a>
+				<a href="#buttons" class="navigation__link">Buttons</a>
+				<a href="#forms" class="navigation__link">Forms</a>
+				<a href="#popups" class="navigation__link">Popups</a>
+				<a href="#panels" class="navigation__link">Panels</a>
+				<a href="#cards" class="navigation__link">cards</a>
+			</div>
+		</nav>
+	</div> -->
+	<!-- <nav class="navbar">
+		<a href="#">Hello</a>
+	</nav> -->
+	<header class="header">
+		<h1 class="heading-primary">Defiant CSS</h1>
+		<p class="heading-primary">Dare To Be Different</p>
+		<div>
+			<a href="download/defiant.zip" class="btn btn--outline-primary">Download</a>
+			<a href="#grid" class="btn btn--info">Documentation</a>
+		</div>
+	</header>
+	<main class="main">
+		<section class="grid" id="grid">
+			<h2>Grid System</h2>
+			<p>This framework does not come with a prebuilt grid system.</p>
+			<p>I highly encourage you to use CSS Grid because...</p>
+			<ul>
+				<li>It's awesome!</li>
+				<li>It's REALLY awesome!!!</li>
+			</ul>
+		</section>
+		<hr>
+		<section class="typography" id="typography">
+			<div>
+				<h2>Typography</h2>
+				<p>All of the fonts are set with the "rem" (root em) measurement.</p>
+				<p>The default HTML font size is set to 62.5% meaning that 1rem = 10px, 55rem = 550px etc... As you can imagine this makes it much easier to set your sizes in your head and reduce brain strain.</p>
+			</div>
+			<div>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<p>Paragraph</p>
+			</div>
+		</section>
+		<hr>
+		<section class="lists" id="lists">
+			<h2>Lists</h2>
+			<div>
+				<p>Default Unordered List</p>
+				<ul>
+					<li>Feed The Cat</li>
+					<li>Become Nice Genius</li>
+					<li>Help The World</li>
+				</ul>
+				<hr>
+				<p>Unordered List with .collection class</p>
+				<ul class="collection">
+					<li>Feed The Cat</li>
+					<li>Become Nice Genius</li>
+					<li>Help The World</li>
+				</ul>
+			</div>
+			<div>
+				<p>Default Ordered List</p>
+				<ol>
+					<li>Feed The Dog</li>
+					<li>Become Evil Genius</li>
+					<li>Take Over The World</li>
+				</ol>
+				<hr>
+				<p>Ordered List with .collection class</p>
+				<ol class="collection">
+					<li>Feed The Dog</li>
+					<li>Become Evil Genius</li>
+					<li>Take Over The World</li>
+				</ol>
+			</div>
+		</section>
+		<hr>
+		<section class="images" id="images">
+			<div>
+				<h2>Images</h2>
+				<p>Images are responsive by default.</p>
+				<img src="img/earth1.jpg" alt="Image of earth">
+			</div>
+			<div>
+				<h2>Thumbnail Images</h2>
+				<p>The images below have a class of img--thumbnail</p>
+				<div class="thumbnails">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+					<img class="img--thumbnail" src="img/earth1.jpg" alt="Image of earth">
+				</div>
+			</div>
+			<div>
+				<h2>Avatar Images</h2>
+				<p>The images below have a class of img--avatar</p>
+				<div class="thumbnails">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--avatar" src="img/hand.jpg" alt="Image of hand">
+				</div>
+			</div>
+			<div>
+				<h2>Zoom Out Images</h2>
+				<p>The images below have a class of img--zoom</p>
+				<div class="thumbnails">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+					<img class="img--zoom" src="img/hand.jpg" alt="Image of hand">
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section id="tables">
+			<h2>Tables</h2>
+			<p>Default Table</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Item Name</th>
+						<th>Inventory</th>
+						<th>Item Price</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Fender Squier Affinity Telecaster</td>
+						<td>9</td>
+						<td>&pound;187.00</td>
+						<td><button class="btn--danger">View</button></td>
+					</tr>
+					<tr>
+						<td>Fender Dreadnought Cutaway</td>
+						<td>3</td>
+						<td>&pound;109.00</td>
+						<td><button>View</button></td>
+					</tr>
+					<tr>
+						<td>Oypla ST</td>
+						<td>23</td>
+						<td>&pound;61.99</td>
+						<td><button class="btn--info">View</button></td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<p>Striped Table</p>
+			<table class="tbl--striped">
+				<thead>
+					<tr>
+						<th>Item Name</th>
+						<th>Inventory</th>
+						<th>Item Price</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Fender Squier Affinity Telecaster</td>
+						<td>9</td>
+						<td>&pound;187.00</td>
+						<td><button class="btn--danger">View</button></td>
+					</tr>
+					<tr>
+						<td>Fender Dreadnought Cutaway</td>
+						<td>3</td>
+						<td>&pound;109.00</td>
+						<td><button>View</button></td>
+					</tr>
+					<tr>
+						<td>Oypla ST</td>
+						<td>23</td>
+						<td>&pound;61.99</td>
+						<td><button class="btn--info">View</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<hr>
+		<section class="buttons" id="buttons">
+			<h2>Buttons</h2>
+			<div>
+				<p>Boring Default Buttons</p>
+				<a href="#" class="btn">Anchor Button</a>
+				<button>Button Element</button>
+				<input type="submit" class="btn" value="Submit Input">
+			</div>
+			<div>
+				<p>Context Buttons</p>
+				<button class="btn btn--primary">btn--primary</button>
+				<button class="btn btn--secondary">btn--secondary</button>
+				<button class="btn btn--success">btn--success</button>
+				<button class="btn btn--danger">btn--danger</button>
+				<button class="btn btn--warning">btn--warning</button>
+				<button class="btn btn--info">btn--info</button>
+			</div>
+			<div>
+				<p>Levitating Buttons</p>
+				<button class="btn btn--levitate btn--primary">btn--levitate btn--primary</button>
+				<button class="btn btn--levitate btn--secondary">btn--levitate btn--secondary</button>
+				<button class="btn btn--levitate btn--success">btn--levitate btn--success</button>
+				<button class="btn btn--levitate btn--danger">btn--levitate btn--danger</button>
+				<button class="btn btn--levitate btn--warning">btn--levitate btn--warning</button>
+				<button class="btn btn--levitate btn--info">btn--levitate btn--info</button>
+			</div>
+			<div>
+				<p>Cool Expanding Buttons</p>
+				<p>NOTE!!! expand/retract effect doesn't work on input elements. Inputs can't use ::before and ::after pseudo elements. :-(</p>
+				<button class="btn btn--expand btn--primary">btn--expand btn--primary</button>
+				<button class="btn btn--expand btn--secondary">btn--expand btn--secondary</button>
+				<button class="btn btn--expand btn--success">btn--expand btn--success</button>
+				<button class="btn btn--expand btn--danger">btn--expand btn--danger</button>
+				<button class="btn btn--expand btn--warning">btn--expand btn--warning</button>
+				<button class="btn btn--expand btn--info">btn--expand btn--info</button>
+			</div>
+			<div>
+				<p>Outline Button</p>
+				<button class="btn btn--outline">btn--outline</button>
+				<button class="btn btn--outline-primary">btn--outline-primary</button>
+				<button class="btn btn--outline-secondary">btn--outline-secondary</button>
+				<button class="btn btn--outline-success">btn--outline-success</button>
+				<button class="btn btn--outline-danger">btn--outline-danger</button>
+				<button class="btn btn--outline-warning">btn--outline-warning</button>
+				<button class="btn btn--outline-info">btn--outline-info</button>
+			</div>
+			<div>
+				<p>Pulsing Button</p>
+				<button class="btn--pulse">btn--pulse</button>
+				<button class="btn--primary btn--pulse">btn--primary btn--pulse</button>
+				<button class="btn--secondary btn--pulse">btn--secondary btn--pulse</button>
+				<button class="btn--success btn--pulse">btn--success btn--pulse</button>
+				<button class="btn--danger btn--pulse">btn--danger btn--pulse</button>
+				<button class="btn--warning btn--pulse">btn--warning btn--pulse</button>
+				<button class="btn--info btn--pulse">btn--info btn--pulse</button>
+			</div>
+		</section>
+		<hr>
+		<section id="forms">
+			<h2>Forms</h2>
+			<div>
+				<p>Vertical Form</p>
+				<form action="members/submit" method="post" class="form-vertical">
+			
+					<label for="text_field">Text Field</label>
+					<input type="text" name="text_field" id="text_field" placeholder="Enter your name here">
+					
+					<label for="password">Password Field</label>
+					<input type="password" name="password" id="password" placeholder="Enter your password here">
+			
+					<label>Radio Buttons</label>
+					<input type="radio" name="radio_field" id="hello" value="hello" checked>
+					<label for="hello">Hello</label>
+					<input type="radio" name="radio_field" id="world" value="world">
+					<label for="world">World</label>
+			
+					<label>Checkboxes</label>
+					<input type="checkbox" name="check_box" id="one" value="check">
+					<label for="one">One</label>
+					<input type="checkbox" name="check_box" id="two" value="box">
+					<label for="two">Two</label>
+			
+					<label>Select Field</label>
+					<select>
+						<option value="0">Select Option...</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+			
+					<label for="email">Email Field</label>
+					<input type="email" name="email" id="email" placeholder="Enter your email here">
+			
+					<label for="textarea">Textarea Field</label>
+					<textarea name="textarea" id="textarea" placeholder="Enter your information here"></textarea>
+			
+					<input type="submit" name="submit" value="Submit Button" class="btn">
+					<button class="btn btn--danger">Delete Button</button>
+				</form>
+			</div>
+		</section>
+		<hr>
+		<section id="modals">
+			<h2>Modals</h2>
+			<button class="btn btn--primary btn--modal">Show modal</button>
+			<div class="modal" id="modal">
+				<div class="modal__content">
+					<a href="#modals" class="modal__close">&times;</a>
+					<h2 class="modal__headline">Hello World</h2>
+					<p>This is a cool modal.</p>
+					<button class="btn btn--info">Save</button>
+					<button class="btn btn--outline-danger dismiss">Dismiss</button>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section id="panels">
+			<h2>Panels</h2>
+			<div class="panel">
+				<div class="panel__heading">.panel__heading</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		
+			<div class="panel">
+				<div class="panel__heading panel--primary">.panel__heading .panel--primary</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		
+			<div class="panel">
+				<div class="panel__heading panel--secondary">.panel__heading .panel--secondary</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		
+			<div class="panel">
+				<div class="panel__heading panel--success">.panel__heading .panel--success</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		
+			<div class="panel">
+				<div class="panel__heading panel--danger">.panel__heading .panel--danger</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		
+			<div class="panel">
+				<div class="panel__heading panel--warning">.panel__heading .panel--warning</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		
+			<div class="panel">
+				<div class="panel__heading panel--info">.panel__heading .panel--info</div>
+				<div class="panel__body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, est! Id nisi reprehenderit unde quod rem corrupti tenetur. Quisquam neque voluptatum hic? Libero animi aut, ipsa dolores repellat ducimus. Vero.
+				</div>		
+			</div>
+		</section>
+		<hr>
+		<section id="cards">
+			<h2>Cards</h2>
+			<p>You can use these card by adding .card and adding .card__body when you want to add text.</p>
+			<div>
+				<div class="card">
+					<div class="card__body">
+						<p>This is a basic card with text.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>		
+				</div>
+				<div class="card">
+					<img src="img/earth1.jpg" alt="">
+					<div class="card__body">
+						<p>This is a card with display image.</p>
+						<a href="#" class="btn btn--outline-info">Oh and a button!</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Created by Martyn Masson</p>
+	</footer>
+	<script src="/js/modal.js"></script>
+</body>
+</html>

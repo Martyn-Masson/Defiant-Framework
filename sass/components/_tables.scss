@@ -1,0 +1,35 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 2.5rem;
+	width: 100%;
+
+	th,
+	td {
+		border-bottom: .1rem solid $colour-light-2;
+		padding: .6rem;
+		text-align: left;
+	}
+
+	th:first-child,
+	td:first-child { padding-left: 0; }
+
+	tbody tr:hover {
+		background: $colour-light-3;
+	}
+
+	td:last-child {
+		white-space:nowrap;
+		width: 0.1%;
+	}
+
+	&.tbl--striped {
+		tbody tr:nth-child(odd) {
+			background: $colour-light-2;
+		}
+
+		tbody tr:hover {
+			background: $colour-light-4;
+		}
+	}
+}

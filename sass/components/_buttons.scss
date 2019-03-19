@@ -1,0 +1,201 @@
+button,
+.btn {
+	background: $colour-dark;
+	border-radius: .5rem;
+	box-shadow: 0 .2rem .5rem rgba($default-box-shadow, 0.4);
+	border: .1rem solid $colour-dark;
+	color: $colour-light;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 600;
+	letter-spacing: .5rem;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	outline: none;
+	padding: 1.2rem 3rem;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .4s ease-in;
+
+	&.btn--levitate {
+		&:hover {
+			box-shadow: 0 1rem 2rem rgba($default-box-shadow, 0.4);
+			transform: translateY(-.3rem);
+		}
+	
+		&:active {
+			box-shadow: 0 .5rem 1rem rgba($default-box-shadow, 0.4);
+			transform: translateY(-.1rem);
+		}
+	}
+
+	&.btn--expand {
+		&::before {
+			background: $colour-dark;
+			border-radius: .5rem;
+			content: "";
+			display: inline-block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			transition: all .4s;
+			width: 100%;
+			z-index: -1;
+		}
+	
+		&:hover::before {
+			opacity: 0;
+			transform: scaleX(1.2) scaleY(1.4);
+		}
+	}
+
+	&.btn--outline {
+		background: $colour-light;
+		color: $colour-dark;
+		transition: all .3s ease-in;
+
+		&:hover {
+			background: $colour-dark;
+			color: $colour-light;
+		}
+
+		&-primary {
+			background: $colour-light;
+			border: .1rem solid $bg-primary;
+			color: $bg-primary;
+
+			&:hover {
+				background: $bg-primary;
+				color: $colour-light;
+			}
+		}
+
+		&-secondary {
+			background: $colour-light;
+			border: .1rem solid $bg-secondary;
+			color: $bg-secondary;
+
+			&:hover {
+				background: $bg-secondary;
+				color: $colour-light;
+			}
+		}
+
+		&-success {
+			background: $colour-light;
+			border: .1rem solid $bg-success;
+			color: $bg-success;
+
+			&:hover {
+				background: $bg-success;
+				color: $colour-light;
+			}
+		}
+
+		&-danger {
+			background: $colour-light;
+			border: .1rem solid $bg-danger;
+			color: $bg-danger;
+
+			&:hover {
+				background: $bg-danger;
+				color: $colour-light;
+			}
+		}
+
+		&-warning {
+			background: $colour-light;
+			border: .1rem solid $bg-warning;
+			color: $bg-warning;
+
+			&:hover {
+				background: $bg-warning;
+				color: $colour-light;
+			}
+		}
+
+		&-info {
+			background: $colour-light;
+			border: .1rem solid $bg-info;
+			color: $bg-info;
+
+			&:hover {
+				background: $bg-info;
+				color: $colour-light;
+			}
+		}
+	}
+
+	&.btn--primary {
+		background: $bg-primary;
+		border: none;
+		color: $colour-light;
+		&:hover {
+			background: darken($bg-primary, 10%);
+		}
+		&::before { background: darken($bg-primary, 10%); }
+	}
+
+	&.btn--secondary {
+		background: $bg-secondary;
+		border: none;
+		color: $colour-light;
+		&:hover {
+			background: darken($bg-secondary, 10%);
+		}
+		&::before { background: darken($bg-secondary, 10%); }
+	}
+
+	&.btn--success {
+		background: $bg-success;
+		border: none;
+		color: $colour-light;
+		&:hover {
+			background: darken($bg-success, 10%);
+		}
+		&::before { background: darken($bg-success, 10%); }
+	}
+
+	&.btn--danger {
+		background: $bg-danger;
+		border: none;
+		color: $colour-light;
+		&:hover {
+			background: darken($bg-danger, 10%);
+		}
+		&::before { background: darken($bg-danger, 10%); }
+	}
+
+	&.btn--warning {
+		background: $bg-warning;
+		border: none;
+		color: $colour-light;
+		&:hover {
+			background: darken($bg-warning, 10%);
+		}
+		&::before { background: darken($bg-warning, 10%); }
+	}
+
+	&.btn--info {
+		background: $bg-info;
+		border: none;
+		color: $colour-light;
+		&:hover {
+			background: darken($bg-info, 10%);
+		}
+		&::before { background: darken($bg-info, 10%); }
+	}
+
+	&.btn--pulse {
+		outline: none;
+		animation: pulse 1s infinite;
+	}
+}
+
+form button,
+form .btn,
+table button,
+table .btn { margin: 0; }

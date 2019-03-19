@@ -1,0 +1,36 @@
+// Media Query Manager
+/*
+	0 - 600px = phone
+	600 - 900px = tablet portrait
+	900 - 1200px = tablet landscape
+	1200 - 1800px = normal styles apply
+	1800+ = big desktop
+
+	$breakpoint argument choices
+	- phone
+	- tablet-portrait
+	- tablet-landscape
+	- big-desktop
+
+	ORDER: Base + typography > general layout + grid > page layout > components
+*/
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		@media (max-width: 37.5em) {	@content }; //600px
+	}
+	@if $breakpoint == tablet-portrait {
+		@media (max-width: 56.25em) {	@content }; //900px
+	}
+	@if $breakpoint == tablet-landscape {
+		@media (max-width: 75em) { @content }; //1200px
+	}
+	@if $breakpoint == big-desktop {
+		@media (min-width: 112.5em) { @content }; //1800px
+	}
+}
+
+@mixin AbsoluteCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
