@@ -132,7 +132,6 @@ h3 {
   }
 }
 
-button,
 .btn {
   background: #111;
   border-radius: 0.5rem;
@@ -153,17 +152,14 @@ button,
   text-transform: uppercase;
   transition: all 0.4s ease-in;
 }
-button.btn--levitate:hover,
 .btn.btn--levitate:hover {
   box-shadow: 0 1rem 2rem rgba(80, 80, 80, 0.4);
   transform: translateY(-0.3rem);
 }
-button.btn--levitate:active,
 .btn.btn--levitate:active {
   box-shadow: 0 0.5rem 1rem rgba(80, 80, 80, 0.4);
   transform: translateY(-0.1rem);
 }
-button.btn--expand::before,
 .btn.btn--expand::before {
   background: #111;
   border-radius: 0.5rem;
@@ -177,173 +173,139 @@ button.btn--expand::before,
   width: 100%;
   z-index: -1;
 }
-button.btn--expand:hover::before,
 .btn.btn--expand:hover::before {
   opacity: 0;
   transform: scaleX(1.2) scaleY(1.4);
 }
-button.btn--outline,
 .btn.btn--outline {
   background: #eee;
   color: #111;
   transition: all 0.3s ease-in;
 }
-button.btn--outline:hover,
 .btn.btn--outline:hover {
   background: #111;
   color: #eee;
 }
-button.btn--outline-primary,
 .btn.btn--outline-primary {
   background: #eee;
   border: 0.1rem solid #007bff;
   color: #007bff;
 }
-button.btn--outline-primary:hover,
 .btn.btn--outline-primary:hover {
   background: #007bff;
   color: #eee;
 }
-button.btn--outline-secondary,
 .btn.btn--outline-secondary {
   background: #eee;
   border: 0.1rem solid #545b62;
   color: #545b62;
 }
-button.btn--outline-secondary:hover,
 .btn.btn--outline-secondary:hover {
   background: #545b62;
   color: #eee;
 }
-button.btn--outline-success,
 .btn.btn--outline-success {
   background: #eee;
   border: 0.1rem solid #28a745;
   color: #28a745;
 }
-button.btn--outline-success:hover,
 .btn.btn--outline-success:hover {
   background: #28a745;
   color: #eee;
 }
-button.btn--outline-danger,
 .btn.btn--outline-danger {
   background: #eee;
   border: 0.1rem solid #dc3545;
   color: #dc3545;
 }
-button.btn--outline-danger:hover,
 .btn.btn--outline-danger:hover {
   background: #dc3545;
   color: #eee;
 }
-button.btn--outline-warning,
 .btn.btn--outline-warning {
   background: #eee;
   border: 0.1rem solid #ffc107;
   color: #ffc107;
 }
-button.btn--outline-warning:hover,
 .btn.btn--outline-warning:hover {
   background: #ffc107;
   color: #eee;
 }
-button.btn--outline-info,
 .btn.btn--outline-info {
   background: #eee;
   border: 0.1rem solid #17a2b8;
   color: #17a2b8;
 }
-button.btn--outline-info:hover,
 .btn.btn--outline-info:hover {
   background: #17a2b8;
   color: #eee;
 }
-button.btn--primary,
 .btn.btn--primary {
   background: #007bff;
   border: none;
   color: #eee;
 }
-button.btn--primary:hover,
 .btn.btn--primary:hover {
   background: #0062cc;
 }
-button.btn--primary::before,
 .btn.btn--primary::before {
   background: #0062cc;
 }
-button.btn--secondary,
 .btn.btn--secondary {
   background: #545b62;
   border: none;
   color: #eee;
 }
-button.btn--secondary:hover,
 .btn.btn--secondary:hover {
   background: #3c4247;
 }
-button.btn--secondary::before,
 .btn.btn--secondary::before {
   background: #3c4247;
 }
-button.btn--success,
 .btn.btn--success {
   background: #28a745;
   border: none;
   color: #eee;
 }
-button.btn--success:hover,
 .btn.btn--success:hover {
   background: #1e7e34;
 }
-button.btn--success::before,
 .btn.btn--success::before {
   background: #1e7e34;
 }
-button.btn--danger,
 .btn.btn--danger {
   background: #dc3545;
   border: none;
   color: #eee;
 }
-button.btn--danger:hover,
 .btn.btn--danger:hover {
   background: #bd2130;
 }
-button.btn--danger::before,
 .btn.btn--danger::before {
   background: #bd2130;
 }
-button.btn--warning,
 .btn.btn--warning {
   background: #ffc107;
   border: none;
   color: #eee;
 }
-button.btn--warning:hover,
 .btn.btn--warning:hover {
   background: #d39e00;
 }
-button.btn--warning::before,
 .btn.btn--warning::before {
   background: #d39e00;
 }
-button.btn--info,
 .btn.btn--info {
   background: #17a2b8;
   border: none;
   color: #eee;
 }
-button.btn--info:hover,
 .btn.btn--info:hover {
   background: #117a8b;
 }
-button.btn--info::before,
 .btn.btn--info::before {
   background: #117a8b;
 }
-button.btn--pulse,
 .btn.btn--pulse {
   outline: none;
   animation: pulse 1s infinite;
@@ -582,8 +544,8 @@ ol {
   overflow: auto;
   position: fixed;
   top: 0;
-  transform: translate3d(-400px, 0, 0);
-  transition: 0.5s;
+  transform: translateX(-40rem);
+  transition: all 0.5s;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */
   z-index: 9999;
@@ -593,8 +555,17 @@ ol {
   padding: 0 1rem 1rem;
 }
 .mobile-nav__link {
+  align-items: center;
+  background: transparent;
+  border: none;
   border-top: 0.2rem solid #eee;
+  cursor: pointer;
   display: flex;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-align: left;
 }
 .mobile-nav__link:hover {
   background: #007bff;
@@ -605,6 +576,7 @@ ol {
 }
 .mobile-nav .submenu-toggle .material-icons {
   margin-left: auto;
+  transition: transform 0.5s;
   vertical-align: middle;
 }
 .mobile-nav .submenu {
@@ -615,9 +587,14 @@ ol {
   border-top: 0.2rem solid #111;
   display: block;
   padding: 1rem 3.2rem;
+  transition: all 0.3s ease-in-out;
 }
-.mobile-nav .submenu__link:hover {
+.mobile-nav .submenu__link:nth-child(odd):hover {
   background: #dc3545;
+  color: #eee;
+}
+.mobile-nav .submenu__link:nth-child(even):hover {
+  background: #28a745;
   color: #eee;
 }
 .mobile-nav .logo, .mobile-nav__link {
@@ -626,6 +603,9 @@ ol {
 }
 .mobile-nav--open {
   transform: translateX(0);
+}
+.mobile-nav--close {
+  transform: translateX(-40rem);
 }
 
 .modal {

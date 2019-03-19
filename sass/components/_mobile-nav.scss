@@ -8,8 +8,8 @@
 	overflow: auto;
 	position: fixed;
 	top: 0;
-	transform: translate3d(-400px,0,0);
-	transition: 0.5s;
+	transform: translateX(-40rem);
+	transition: all 0.5s;
 	-webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 	z-index: 9999;
 
@@ -18,8 +18,17 @@
 		padding: 0 1rem 1rem;
 	}
 	&__link {
+		align-items: center;
+		background: transparent;
+		border: none;
 		border-top: .2rem solid $colour-light;
+		cursor: pointer;
 		display: flex;
+		font-family: inherit;
+		font-size: 1.6rem;
+		font-weight: inherit;
+		letter-spacing: inherit;
+		text-align: left;
 
 		&:hover {
 			background: $bg-primary;
@@ -32,6 +41,7 @@
 	
 	.submenu-toggle .material-icons {
 		margin-left: auto;
+		transition: transform .5s;
 		vertical-align: middle;
 	}
 
@@ -44,9 +54,15 @@
 			border-top: .2rem solid $colour-dark;
 			display: block;
 			padding: 1rem 3.2rem;
+			transition: all .3s ease-in-out;
 
-			&:hover {
+			&:nth-child(odd):hover {
 				background: $bg-danger;
+				color: $colour-light;
+			}
+
+			&:nth-child(even):hover {
+				background: $bg-success;
 				color: $colour-light;
 			}
 		}
@@ -59,4 +75,5 @@
 	}
 
 	&--open { transform: translateX(0); }
+	&--close { transform: translateX(-40rem); }
 }
