@@ -572,6 +572,35 @@ ol {
   list-style: decimal inside;
 }
 
+.mobile-nav {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 30rem;
+  position: fixed;
+  transform: translateX(-105%);
+  z-index: 100;
+}
+.mobile-nav .logo {
+  font-size: 2.5rem;
+  padding: 0 1rem 1rem;
+}
+.mobile-nav__link {
+  border-top: 0.2rem solid #eee;
+}
+.mobile-nav__link:hover {
+  background: #eee;
+  color: #111;
+}
+.mobile-nav__link:last-child {
+  border-bottom: 0.2rem solid #eee;
+}
+.mobile-nav .logo, .mobile-nav__link {
+  color: #eee;
+  padding: 1rem 3.2rem;
+}
+
 .modal {
   background: rgba(17, 17, 17, 0.8);
   display: none;

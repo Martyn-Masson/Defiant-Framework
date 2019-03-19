@@ -1,0 +1,31 @@
+.mobile-nav {
+	background: $colour-dark;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	min-width: 30rem;
+	position: fixed;
+	transform: translateX(-105%);
+	z-index: 100;
+
+	& .logo {
+		font-size: 2.5rem;
+		padding: 0 1rem 1rem;
+	}
+	&__link {
+		border-top: .2rem solid $colour-light;
+
+		&:hover {
+			background: $colour-light;
+			color: $colour-dark;
+		}
+
+		&:last-child { border-bottom: .2rem solid $colour-light; }
+	}
+
+	& .logo,
+	&__link {
+		color: $colour-light;
+		padding: 1rem 3.2rem;
+	}
+}
