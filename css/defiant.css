@@ -617,8 +617,7 @@ ol {
   width: 100%;
   z-index: 100;
 }
-.navbar .btn-toggle {
-  color: #eee;
+.navbar .nav-toggle {
   cursor: pointer;
   display: none;
 }
@@ -626,7 +625,8 @@ ol {
   font-size: 2.5rem;
   margin-right: auto;
 }
-.navbar .logo, .navbar__link {
+.navbar .logo,
+.navbar .nav-toggle, .navbar__link {
   color: #eee;
 }
 .navbar__link {
@@ -639,7 +639,7 @@ ol {
   .navbar a:not(.logo) {
     display: none;
   }
-  .navbar .btn-toggle {
+  .navbar .nav-toggle {
     display: inline-block;
   }
 }

@@ -7,8 +7,7 @@
 	width: 100%;
 	z-index: 100;
 
-	& .btn-toggle {
-		color: #eee;
+	& .nav-toggle {
 		cursor: pointer;
 		display: none;
 	}
@@ -19,6 +18,7 @@
 	}
 
 	& .logo,
+	.nav-toggle,
 	&__link { color: #eee; }
 
 	&__link {
@@ -29,6 +29,6 @@
 
 	@include respond(phone) {
 		a:not(.logo) { display: none; }
-		& .btn-toggle { display: inline-block; }
+		& .nav-toggle { display: inline-block; }
 	}
 }
