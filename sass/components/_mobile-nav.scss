@@ -2,7 +2,7 @@
 	background: $colour-dark;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 100%;
 	left: 0;
 	min-width: 30rem;
 	overflow: auto;
@@ -19,19 +19,43 @@
 	}
 	&__link {
 		border-top: .2rem solid $colour-light;
+		display: flex;
 
 		&:hover {
-			background: $colour-light;
-			color: $colour-dark;
+			background: $bg-primary;
+			color: $colour-light;
 		}
 
 		&:last-child { border-bottom: .2rem solid $colour-light; }
+		
+	}
+	
+	.submenu-toggle .material-icons {
+		margin-left: auto;
+		vertical-align: middle;
+	}
+
+
+	.submenu {
+		display: none;
+		
+		&__link {
+			background: $colour-light;
+			border-top: .2rem solid $colour-dark;
+			display: block;
+			padding: 1rem 3.2rem;
+
+			&:hover {
+				background: $bg-danger;
+				color: $colour-light;
+			}
+		}
 	}
 
 	& .logo,
 	&__link {
 		color: $colour-light;
-		padding: 1rem 3.2rem;
+		padding: 1rem 2.5rem;
 	}
 
 	&--open { transform: translateX(0); }

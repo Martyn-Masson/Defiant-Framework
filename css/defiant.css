@@ -576,7 +576,7 @@ ol {
   background: #111;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   left: 0;
   min-width: 30rem;
   overflow: auto;
@@ -594,17 +594,35 @@ ol {
 }
 .mobile-nav__link {
   border-top: 0.2rem solid #eee;
+  display: flex;
 }
 .mobile-nav__link:hover {
-  background: #eee;
-  color: #111;
+  background: #007bff;
+  color: #eee;
 }
 .mobile-nav__link:last-child {
   border-bottom: 0.2rem solid #eee;
 }
+.mobile-nav .submenu-toggle .material-icons {
+  margin-left: auto;
+  vertical-align: middle;
+}
+.mobile-nav .submenu {
+  display: none;
+}
+.mobile-nav .submenu__link {
+  background: #eee;
+  border-top: 0.2rem solid #111;
+  display: block;
+  padding: 1rem 3.2rem;
+}
+.mobile-nav .submenu__link:hover {
+  background: #dc3545;
+  color: #eee;
+}
 .mobile-nav .logo, .mobile-nav__link {
   color: #eee;
-  padding: 1rem 3.2rem;
+  padding: 1rem 2.5rem;
 }
 .mobile-nav--open {
   transform: translateX(0);

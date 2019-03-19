@@ -2,6 +2,9 @@
 	var navToggle = document.querySelector(".nav-toggle");
 	var mobileNav =  document.querySelector(".mobile-nav");
 	var body = document.querySelector("body");
+	var submenuToggle = document.querySelectorAll(".submenu-toggle");
+	var submenuToggleIcon = document.querySelector(".submenu-toggle i");
+	console.log(submenuToggleIcon);
 
 	body.addEventListener("keyup", (e) => {
 		if(e.keyCode == 27) {
@@ -12,4 +15,19 @@
 	navToggle.addEventListener("click", () => {
 		mobileNav.classList.toggle("mobile-nav--open");
 	});
+
+	for(var i = 0; i < submenuToggle.length; i++) {
+		submenuToggle[i].addEventListener("click", function() {
+			var submenu = this.nextElementSibling;
+			if(submenu.style.display === "block") {
+				submenu.style.display = "none";
+				submenuToggleIcon.style.transform = "none";
+			} else {
+				submenu.style.display = "block";
+				submenuToggleIcon.style.transform = "rotate(90deg)";
+			}
+		});
+	}
+
+	
 })();
