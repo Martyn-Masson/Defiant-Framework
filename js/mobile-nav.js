@@ -1,4 +1,4 @@
-(function() {
+(function(global) {
 	var navToggle = document.querySelector(".nav-toggle");
 	var mobileNav =  document.querySelector(".mobile-nav");
 	var submenuToggle = document.querySelectorAll(".submenu-toggle");
@@ -14,12 +14,12 @@
 		mobileNav.classList.toggle("mobile-nav--open");
 	});
 
-	window.addEventListener("mouseup", (e) => {
-		if(e.target != mobileNav && e.target.parentNode != mobileNav && e.target != submenuToggleIcon) {
+	global.addEventListener("click", (e) => {
+		// If the target isn't the mobile-nav or the nav-toggle
+		if((e.target != mobileNav) && (e.target.parentNode != mobileNav) && (e.target != navToggle) && (e.target.tagName !== "I")) {
 			mobileNav.classList.remove("mobile-nav--open");
 		}
 	});
-
 
 	for(var i = 0; i < submenuToggle.length; i++) {
 		submenuToggle[i].addEventListener("click", function() {
@@ -35,4 +35,4 @@
 	}
 
 	
-})();
+})(window);
