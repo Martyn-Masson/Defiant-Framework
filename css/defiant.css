@@ -132,6 +132,17 @@ h3 {
   }
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 .btn {
   background: #111;
   border-radius: 0.5rem;
@@ -603,9 +614,6 @@ ol {
 }
 .side-nav--open {
   transform: translateX(0);
-}
-.side-nav--close {
-  transform: translateX(-40rem);
 }
 
 .modal {
