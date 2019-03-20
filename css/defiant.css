@@ -534,7 +534,7 @@ ol {
   list-style: decimal inside;
 }
 
-.mobile-nav {
+.side-nav {
   background: #111;
   display: flex;
   flex-direction: column;
@@ -550,11 +550,11 @@ ol {
   /* enables momentum scrolling in iOS overflow elements */
   z-index: 9999;
 }
-.mobile-nav .logo {
+.side-nav .logo {
   font-size: 2.5rem;
   padding: 0 1rem 1rem;
 }
-.mobile-nav__link {
+.side-nav__link {
   align-items: center;
   background: transparent;
   border: none;
@@ -567,44 +567,44 @@ ol {
   letter-spacing: inherit;
   text-align: left;
 }
-.mobile-nav__link:hover {
+.side-nav__link:hover {
   background: #007bff;
   color: #eee;
 }
-.mobile-nav__link:last-child {
+.side-nav__link:last-child {
   border-bottom: 0.2rem solid #eee;
 }
-.mobile-nav .submenu-toggle .material-icons {
+.side-nav .submenu-toggle .material-icons {
   margin-left: auto;
   transition: transform 0.5s;
   vertical-align: middle;
 }
-.mobile-nav .submenu {
+.side-nav .submenu {
   display: none;
 }
-.mobile-nav .submenu__link {
+.side-nav .submenu__link {
   background: #eee;
   border-top: 0.2rem solid #111;
   display: block;
   padding: 1rem 3.2rem;
   transition: all 0.3s ease-in-out;
 }
-.mobile-nav .submenu__link:nth-child(odd):hover {
+.side-nav .submenu__link:nth-child(odd):hover {
   background: #dc3545;
   color: #eee;
 }
-.mobile-nav .submenu__link:nth-child(even):hover {
+.side-nav .submenu__link:nth-child(even):hover {
   background: #28a745;
   color: #eee;
 }
-.mobile-nav .logo, .mobile-nav__link {
+.side-nav .logo, .side-nav__link {
   color: #eee;
   padding: 1rem 2.5rem;
 }
-.mobile-nav--open {
+.side-nav--open {
   transform: translateX(0);
 }
-.mobile-nav--close {
+.side-nav--close {
   transform: translateX(-40rem);
 }
 

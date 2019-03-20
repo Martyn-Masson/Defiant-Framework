@@ -1,23 +1,23 @@
 (function(global) {
 	var navToggle = document.querySelector(".nav-toggle");
-	var mobileNav =  document.querySelector(".mobile-nav");
+	var sideNav =  document.querySelector(".side-nav");
 	var submenuToggle = document.querySelectorAll(".submenu-toggle");
 	var submenuToggleIcon = document.querySelector(".submenu-toggle i");
 
 	document.addEventListener("keyup", (e) => {
 		if(e.keyCode == 27) {
-			mobileNav.classList.toggle("mobile-nav--open");
+			sideNav.classList.toggle("side-nav--open");
 		}
 	});
 	
 	navToggle.addEventListener("click", () => {
-		mobileNav.classList.toggle("mobile-nav--open");
+		sideNav.classList.toggle("side-nav--open");
 	});
 
 	global.addEventListener("click", (e) => {
-		// If the target isn't the mobile-nav or the nav-toggle
-		if((e.target != mobileNav) && (e.target.parentNode != mobileNav) && (e.target != navToggle) && (e.target.tagName !== "I")) {
-			mobileNav.classList.remove("mobile-nav--open");
+		// If the target isn't the side-nav or the nav-toggle
+		if((e.target != sideNav) && (e.target.parentNode != sideNav) && (e.target != navToggle) && (e.target.tagName !== "I")) {
+			sideNav.classList.remove("side-nav--open");
 		}
 	});
 
