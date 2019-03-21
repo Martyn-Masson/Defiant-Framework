@@ -21,7 +21,23 @@
 	.nav-toggle,
 	&__link { color: #eee; }
 
-	&__link { margin: 0 2rem; }
+	&__link {
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		font-family: inherit;
+		font-size: 1.6rem;
+		font-weight: inherit;
+		letter-spacing: inherit;
+		margin: 0 2rem;
+		outline: none;
+	}
+
+	.dropdown-toggle::after {
+		font-family: "Material Icons";
+		content: "arrow_drop_down";
+		vertical-align: middle;
+	}
 
 	&--fixed { position: fixed; }
 
