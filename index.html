@@ -14,13 +14,25 @@
 	<nav class="navbar navbar--fixed">
 		<a href="index.html" class="logo">Defiant CSS</a>
 		<a href="index.html" class="navbar__link">Home</a>
-		<a href="index.html" class="navbar__link">Documentation</a>
+		<div class="dropdown">
+			<button class="navbar__link dropdown-toggle">Documentation</button>
+			<div class="dropdown-menu">
+				<a href="#grid" class="dropdown-menu__link">Grid System</a>
+				<a href="#typography" class="dropdown-menu__link">Typography</a>
+				<a href="#lists" class="dropdown-menu__link">Lists</a>
+				<a href="#images" class="dropdown-menu__link">Images</a>
+				<a href="#tables" class="dropdown-menu__link">Tables</a>
+				<a href="#buttons" class="dropdown-menu__link">Buttons</a>
+				<a href="#forms" class="dropdown-menu__link">Forms</a>
+				<a href="#modals" class="dropdown-menu__link">Modals</a>
+				<a href="#panels" class="dropdown-menu__link">Panels</a>
+				<a href="#cards" class="dropdown-menu__link">Cards</a>
+			</div>
+		</div>
 		<div class="dropdown">
 			<button class="navbar__link dropdown-toggle">Examples</button>
 			<div class="dropdown-menu">
 				<a href="#" class="dropdown-menu__link">Starter Template</a>
-				<a href="#" class="dropdown-menu__link">Starter</a>
-				<a href="#" class="dropdown-menu__link">Starter</a>
 			</div>
 		</div>
 		<i class="material-icons nav-toggle">menu</i>
@@ -232,7 +244,7 @@
 			<div>
 				<p>Boring Default Buttons</p>
 				<a href="#" class="btn">Anchor Button</a>
-				<button>Button Element</button>
+				<button class="btn">Button Element</button>
 				<input type="submit" class="btn" value="Submit Input">
 			</div>
 			<div>
@@ -275,13 +287,13 @@
 			</div>
 			<div>
 				<p>Pulsing Button</p>
-				<button class="btn--pulse">btn--pulse</button>
-				<button class="btn--primary btn--pulse">btn--primary btn--pulse</button>
-				<button class="btn--secondary btn--pulse">btn--secondary btn--pulse</button>
-				<button class="btn--success btn--pulse">btn--success btn--pulse</button>
-				<button class="btn--danger btn--pulse">btn--danger btn--pulse</button>
-				<button class="btn--warning btn--pulse">btn--warning btn--pulse</button>
-				<button class="btn--info btn--pulse">btn--info btn--pulse</button>
+				<button class="btn btn--pulse">btn--pulse</button>
+				<button class="btn btn--primary btn--pulse">btn--primary btn--pulse</button>
+				<button class="btn btn--secondary btn--pulse">btn--secondary btn--pulse</button>
+				<button class="btn btn--success btn--pulse">btn--success btn--pulse</button>
+				<button class="btn btn--danger btn--pulse">btn--danger btn--pulse</button>
+				<button class="btn btn--warning btn--pulse">btn--warning btn--pulse</button>
+				<button class="btn btn--info btn--pulse">btn--info btn--pulse</button>
 			</div>
 		</section>
 		<hr>
