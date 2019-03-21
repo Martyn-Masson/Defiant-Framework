@@ -15,7 +15,14 @@
 		<a href="index.html" class="logo">Defiant CSS</a>
 		<a href="index.html" class="navbar__link">Home</a>
 		<a href="index.html" class="navbar__link">Documentation</a>
-		<a href="index.html" class="navbar__link">Examples</a>
+		<div class="dropdown">
+			<button class="navbar__link dropdown-toggle">Examples</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-menu__link">Starter Template</a>
+				<a href="#" class="dropdown-menu__link">Starter</a>
+				<a href="#" class="dropdown-menu__link">Starter</a>
+			</div>
+		</div>
 		<i class="material-icons nav-toggle">menu</i>
 	</nav>
 	<nav class="side-nav">
@@ -413,5 +420,6 @@
 	</footer>
 	<script src="/js/modal.js"></script>
 	<script src="/js/side-nav.js"></script>
+	<script src="/js/dropdown.js"></script>
 </body>
 </html>

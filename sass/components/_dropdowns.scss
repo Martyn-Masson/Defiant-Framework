@@ -1,0 +1,39 @@
+.dropdown {
+	position: relative;
+
+	&-menu {
+		background: #fff;
+		border-bottom-left-radius: .5rem;
+		border-bottom-right-radius: .5rem;
+		box-shadow: .2rem .2rem .5rem rgba($colour-dark, .7);
+		display: none;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		transform: translate3d(0, 3.8rem, 0);
+		will-change: transform;
+
+		& .dropdown-menu__link {
+			padding: 1rem 3.2rem;
+			display: block;
+
+			&:nth-child(odd):hover {
+				background: $bg-danger;
+				color: $colour-light;
+			}
+
+			&:nth-child(even):hover {
+				background: $bg-success;
+				color: $colour-light;
+			}
+
+			&:last-child:hover {
+				border-bottom-left-radius: .5rem;
+				border-bottom-right-radius: .5rem;
+			}
+		}
+	}
+}
+
+.show { display: block; }

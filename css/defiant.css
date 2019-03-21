@@ -350,6 +350,43 @@ table .btn {
   text-align: center;
 }
 
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  background: #fff;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(17, 17, 17, 0.7);
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translate3d(0, 3.8rem, 0);
+  will-change: transform;
+}
+.dropdown-menu .dropdown-menu__link {
+  padding: 1rem 3.2rem;
+  display: block;
+}
+.dropdown-menu .dropdown-menu__link:nth-child(odd):hover {
+  background: #dc3545;
+  color: #eee;
+}
+.dropdown-menu .dropdown-menu__link:nth-child(even):hover {
+  background: #28a745;
+  color: #eee;
+}
+.dropdown-menu .dropdown-menu__link:last-child:hover {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.show {
+  display: block;
+}
+
 .form-vertical {
   margin-bottom: 2rem;
   max-width: 48rem;
@@ -674,7 +711,20 @@ ol {
   color: #eee;
 }
 .navbar__link {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: inherit;
+  letter-spacing: inherit;
   margin: 0 2rem;
+  outline: none;
+}
+.navbar .dropdown-toggle::after {
+  font-family: "Material Icons";
+  content: "arrow_drop_down";
+  vertical-align: middle;
 }
 .navbar--fixed {
   position: fixed;
