@@ -1,0 +1,15 @@
+header {
+	background: #111;
+	color: #eee;
+	transition: all 2s;
+	clip-path: polygon(
+		0 25vh, 
+		100% 0, 
+		100% 75vh, 
+		0 100%
+	);
+}
+
+header h1 {	animation: moveInBottom 2s; }
+header p {	animation: moveInBottom 2s; }
+header a { animation: fadeIn 3s; }
