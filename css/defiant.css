@@ -852,11 +852,22 @@ table.tbl--striped tbody tr:hover {
 .footer {
   background: #111;
   color: #eee;
+  display: flex;
+  justify-content: space-evenly;
   padding: 2rem;
   text-align: center;
 }
 .footer a {
   color: #eee;
+}
+.footer a:hover {
+  color: orangered;
+}
+@media (max-width: 37.5em) {
+  .footer {
+    justify-content: initial;
+    flex-direction: column;
+  }
 }
 
 header {
