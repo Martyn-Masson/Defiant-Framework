@@ -906,6 +906,14 @@ table.tbl--striped tbody tr:hover {
   width: 80%;
 }
 
+.panel:nth-child(odd) {
+  margin: 5rem 0;
+}
+
+h3 ~ .panel {
+  margin-top: 0 !important;
+}
+
 .header-home {
   background: #111;
   color: #eee;
