@@ -849,6 +849,16 @@ table.tbl--striped tbody tr:hover {
   background: #bbb;
 }
 
+.footer {
+  background: #111;
+  color: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+.footer a {
+  color: #eee;
+}
+
 header {
   background: #111;
   color: #eee;
@@ -875,7 +885,7 @@ header a {
   justify-content: center;
 }
 
-.card {
+.components .card {
   max-width: initial;
 }
 
