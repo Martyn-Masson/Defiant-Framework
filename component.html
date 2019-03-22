@@ -55,12 +55,148 @@
 		</div>
 		<a href="#" class="side-nav__link">Examples</a>
 	</nav>
-	<header>
-		
+	<header class="header-component">
+		<nav>
+			<ul class="breadcrumb">
+				<li class="breadcrumb__item"><a href="/">Home</a></li>
+				<li class="breadcrumb__item"><a href="/">Component</a></li>
+			</ul>
+		</nav>
+		<h1>Component Name</h1>
 	</header>
 	<main class="main">
 
-		
+		<section class="component">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ad eaque officiis sit reprehenderit voluptatibus! Quam pariatur laudantium dolorem tenetur natus expedita doloribus quae nobis corporis cum, sed quis dignissimos</p>
+
+			<h3>Examples</h3>
+			<div class="panel">
+				<div class="panel__heading panel--primary">Boring Default Buttons</div>
+				<div class="panel__body">
+					<a href="#" class="btn">Anchor Button</a>
+					<button class="btn">Button Element</button>
+					<input type="submit" class="btn" value="Submit Input">
+					
+					<div class="panel">
+							<div class="panel__heading panel--secondary">Default Button Code</div>
+							<div class="panel__body">
+<pre class="pre">
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Anchor Button&lt;/a&gt;
+&lt;button class=&quot;btn&quot;&gt;Button Element&lt;/button&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Submit Input&quot;&gt;</pre>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="panel">
+				<div class="panel__heading panel--primary">Context Buttons</div>
+				<div class="panel__body">
+					<button class="btn btn--primary">btn--primary</button>
+					<button class="btn btn--secondary">btn--secondary</button>
+					<button class="btn btn--success">btn--success</button>
+					<button class="btn btn--danger">btn--danger</button>
+					<button class="btn btn--warning">btn--warning</button>
+					<button class="btn btn--info">btn--info</button>
+
+					<div class="panel">
+							<div class="panel__heading panel--secondary">Context Button Code</div>
+							<div class="panel__body"><pre class="pre">
+&lt;button class=&quot;btn btn--primary&quot;&gt;btn--primary&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary&quot;&gt;btn--secondary&lt;/button&gt;
+&lt;button class=&quot;btn btn--success&quot;&gt;btn--success&lt;/button&gt;
+&lt;button class=&quot;btn btn--danger&quot;&gt;btn--danger&lt;/button&gt;
+&lt;button class=&quot;btn btn--warning&quot;&gt;btn--warning&lt;/button&gt;
+&lt;button class=&quot;btn btn--info&quot;&gt;btn--info&lt;/button&gt;
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="panel">
+				<div class="panel__heading panel--primary">Cool Expanding Buttons</div>
+				<div class="panel__body">
+					<p>NOTE!!! expand/retract effect doesn't work on input elements. Inputs can't use ::before and ::after pseudo elements. :-(</p>
+					<button class="btn btn--expand btn--primary">btn--expand btn--primary</button>
+					<button class="btn btn--expand btn--secondary">btn--expand btn--secondary</button>
+					<button class="btn btn--expand btn--success">btn--expand btn--success</button>
+					<button class="btn btn--expand btn--danger">btn--expand btn--danger</button>
+					<button class="btn btn--expand btn--warning">btn--expand btn--warning</button>
+					<button class="btn btn--expand btn--info">btn--expand btn--info</button>
+					
+					<div class="panel">
+							<div class="panel__heading panel--secondary">Cool Expanding Button Code</div>
+							<div class="panel__body">
+<pre class="pre">
+&lt;button class=&quot;btn btn--expand btn--primary&quot;&gt;btn--expand btn--primary&lt;/button&gt;
+&lt;button class=&quot;btn btn--expand btn--secondary&quot;&gt;btn--expand btn--secondary&lt;/button&gt;
+&lt;button class=&quot;btn btn--expand btn--success&quot;&gt;btn--expand btn--success&lt;/button&gt;
+&lt;button class=&quot;btn btn--expand btn--danger&quot;&gt;btn--expand btn--danger&lt;/button&gt;
+&lt;button class=&quot;btn btn--expand btn--warning&quot;&gt;btn--expand btn--warning&lt;/button&gt;
+&lt;button class=&quot;btn btn--expand btn--info&quot;&gt;btn--expand btn--info&lt;/button&gt;
+</pre>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="panel">
+				<div class="panel__heading panel--primary">Awesome Outline Buttons</div>
+				<div class="panel__body">
+					<button class="btn btn--outline">btn--outline</button>
+					<button class="btn btn--outline-primary">btn--outline-primary</button>
+					<button class="btn btn--outline-secondary">btn--outline-secondary</button>
+					<button class="btn btn--outline-success">btn--outline-success</button>
+					<button class="btn btn--outline-danger">btn--outline-danger</button>
+					<button class="btn btn--outline-warning">btn--outline-warning</button>
+					<button class="btn btn--outline-info">btn--outline-info</button>
+					
+					<div class="panel">
+							<div class="panel__heading panel--secondary">Awesome Outline Button Code</div>
+							<div class="panel__body">
+<pre class="pre">
+&lt;button class=&quot;btn btn--outline&quot;&gt;btn--outline&lt;/button&gt;
+&lt;button class=&quot;btn btn--outline-primary&quot;&gt;btn--outline-primary&lt;/button&gt;
+&lt;button class=&quot;btn btn--outline-secondary&quot;&gt;btn--outline-secondary&lt;/button&gt;
+&lt;button class=&quot;btn btn--outline-success&quot;&gt;btn--outline-success&lt;/button&gt;
+&lt;button class=&quot;btn btn--outline-danger&quot;&gt;btn--outline-danger&lt;/button&gt;
+&lt;button class=&quot;btn btn--outline-warning&quot;&gt;btn--outline-warning&lt;/button&gt;
+&lt;button class=&quot;btn btn--outline-info&quot;&gt;btn--outline-info&lt;/button&gt;
+</pre>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="panel">
+				<div class="panel__heading panel--primary">Pulsating Pulse Buttons</div>
+				<div class="panel__body">
+					<button class="btn btn--pulse">btn--pulse</button>
+					<button class="btn btn--primary btn--pulse">btn--primary btn--pulse</button>
+					<button class="btn btn--secondary btn--pulse">btn--secondary btn--pulse</button>
+					<button class="btn btn--success btn--pulse">btn--success btn--pulse</button>
+					<button class="btn btn--danger btn--pulse">btn--danger btn--pulse</button>
+					<button class="btn btn--warning btn--pulse">btn--warning btn--pulse</button>
+					<button class="btn btn--info btn--pulse">btn--info btn--pulse</button>
+					
+					<div class="panel">
+							<div class="panel__heading panel--secondary">Pulsating Pulse Button Code</div>
+							<div class="panel__body">
+<pre class="pre">
+&lt;button class=&quot;btn btn--pulse&quot;&gt;btn--pulse&lt;/button&gt;
+&lt;button class=&quot;btn btn--primary btn--pulse&quot;&gt;btn--primary btn--pulse&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary btn--pulse&quot;&gt;btn--secondary btn--pulse&lt;/button&gt;
+&lt;button class=&quot;btn btn--success btn--pulse&quot;&gt;btn--success btn--pulse&lt;/button&gt;
+&lt;button class=&quot;btn btn--danger btn--pulse&quot;&gt;btn--danger btn--pulse&lt;/button&gt;
+&lt;button class=&quot;btn btn--warning btn--pulse&quot;&gt;btn--warning btn--pulse&lt;/button&gt;
+&lt;button class=&quot;btn btn--info btn--pulse&quot;&gt;btn--info btn--pulse&lt;/button&gt;
+</pre>
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>		
 	</main>
 	<footer class="footer">
 		<p>Copyright &copy; <a href="https://martynmasson.com">Martyn Masson</a></p>

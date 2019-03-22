@@ -15,6 +15,29 @@ ol {
 		}
 		li:last-child { border-bottom: none; }
 	}
+
+	&.breadcrumb {
+		border-bottom: .1rem solid $colour-dark;
+		display: flex;
+		font-size: 1.2rem;
+		list-style: none;
+		margin-bottom: 2rem;
+		padding: .6rem 2rem 0 0;
+
+		& li + li::before {
+			content: " /";
+			padding: 0 .5rem;
+		}
+
+		& .breadcrumb__item {
+
+			&:hover:not(:last-child) {
+				text-decoration: underline;
+			}
+			
+			&:last-child a { font-weight: bold;	}
+		}
+	}
 }
 
 ul { list-style: circle inside; }

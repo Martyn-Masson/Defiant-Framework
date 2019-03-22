@@ -26,13 +26,6 @@ body {
     100% { opacity: 1; }
 }
 
-main {
-	margin: 0 auto;
-	width: 80%;
-}
-
-section { padding: 6rem 0; }
-
 .typography {
 	display: grid;
 	grid-gap: 3rem;

@@ -1,4 +1,4 @@
-header {
+.header-home {
 	background: #111;
 	color: #eee;
 	transition: all 2s;
@@ -8,11 +8,13 @@ header {
 		100% 75vh, 
 		0 100%
 	);
+
+	h1 {	animation: moveInBottom 2s; }
+	p {	animation: moveInBottom 2s; }
+	a { animation: fadeIn 3s; }
 }
 
-header h1 {	animation: moveInBottom 2s; }
-header p {	animation: moveInBottom 2s; }
-header a { animation: fadeIn 3s; }
+.home-section { padding: 6rem 0; }
 
 .components {
 	display: grid;

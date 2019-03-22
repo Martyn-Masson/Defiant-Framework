@@ -43,7 +43,6 @@ html {
 }
 
 body {
-  background: #eee;
   color: #111;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1rem;
@@ -172,6 +171,11 @@ h3 {
   top: 0;
   width: 100%;
   z-index: 2;
+}
+
+.pre {
+  font-family: monospace;
+  font-size: 1.8rem;
 }
 
 .btn {
@@ -620,6 +624,28 @@ ul.collection li:last-child,
 ol.collection li:last-child {
   border-bottom: none;
 }
+ul.breadcrumb,
+ol.breadcrumb {
+  border-bottom: 0.1rem solid #111;
+  display: flex;
+  font-size: 1.2rem;
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0.6rem 2rem 0 0;
+}
+ul.breadcrumb li + li::before,
+ol.breadcrumb li + li::before {
+  content: " /";
+  padding: 0 0.5rem;
+}
+ul.breadcrumb .breadcrumb__item:hover:not(:last-child),
+ol.breadcrumb .breadcrumb__item:hover:not(:last-child) {
+  text-decoration: underline;
+}
+ul.breadcrumb .breadcrumb__item:last-child a,
+ol.breadcrumb .breadcrumb__item:last-child a {
+  font-weight: bold;
+}
 
 ul {
   list-style: circle inside;
@@ -870,23 +896,34 @@ table.tbl--striped tbody tr:hover {
   }
 }
 
-header {
+.main {
+  margin: 0 auto 5rem;
+  width: 80%;
+}
+
+.header-component {
+  margin: 10rem auto 0;
+  width: 80%;
+}
+
+.header-home {
   background: #111;
   color: #eee;
   transition: all 2s;
   clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
 }
-
-header h1 {
+.header-home h1 {
   animation: moveInBottom 2s;
 }
-
-header p {
+.header-home p {
   animation: moveInBottom 2s;
 }
-
-header a {
+.header-home a {
   animation: fadeIn 3s;
+}
+
+.home-section {
+  padding: 6rem 0;
 }
 
 .components {
