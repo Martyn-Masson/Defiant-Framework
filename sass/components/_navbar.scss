@@ -42,7 +42,7 @@
 	&--fixed { position: fixed; }
 
 	@include respond(phone) {
-		a:not(.logo) { display: none; }
+		:not(.logo) { display: none; }
 		& .nav-toggle { display: inline-block; }
 	}
 }

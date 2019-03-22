@@ -730,7 +730,7 @@ ol {
   position: fixed;
 }
 @media (max-width: 37.5em) {
-  .navbar a:not(.logo) {
+  .navbar :not(.logo) {
     display: none;
   }
   .navbar .nav-toggle {
