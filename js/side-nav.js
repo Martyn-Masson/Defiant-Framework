@@ -30,7 +30,7 @@
 		// If the target isn't the side-nav or the nav-toggle
 		if((e.target != sideNav) && (e.target.parentNode != sideNav) && (e.target != navToggle) && (e.target.tagName !== "I")) {
 			sideNav.classList.remove("side-nav--open");
-			toggleOverlay();
+			// toggleOverlay();
 		}
 	});
 
