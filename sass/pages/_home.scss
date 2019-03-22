@@ -13,3 +13,13 @@ header {
 header h1 {	animation: moveInBottom 2s; }
 header p {	animation: moveInBottom 2s; }
 header a { animation: fadeIn 3s; }
+
+.components {
+	display: grid;
+	grid-gap: 1rem 3rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	justify-content: center;
+}
+
+.card { max-width: initial; }
+.card__body i { font-size: 8rem; }

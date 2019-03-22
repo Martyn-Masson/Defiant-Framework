@@ -15,9 +15,14 @@
 		bottom: 0;
 	}
 
-	.card__body {
+	&__body {
 		padding: 2rem;
 		text-align: center;
+	}
+
+	&__heading {
+		font-size: 2rem;
+		font-weight: bold;
 	}
 
 	// &.card--horizontal {
