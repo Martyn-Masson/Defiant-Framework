@@ -64,11 +64,6 @@ section { padding: 6rem 0; }
 
 .buttons .btn--pulse { margin: 1rem; }
 
-footer {
-	padding: 2rem;
-	text-align: center;
-}
-
 @media(max-width: 900px) {
 	main { width: 90%; }
 	section { padding: 8rem 0; }
