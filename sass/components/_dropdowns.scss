@@ -15,8 +15,10 @@
 		will-change: transform;
 
 		& .dropdown-menu__link {
-			padding: 1rem 3.2rem;
 			display: block;
+			padding: 1rem 3.2rem;
+
+			&:not(:first-child) { border-top: .2rem solid #ccc; }
 
 			&:nth-child(odd):hover {
 				background: $bg-danger;

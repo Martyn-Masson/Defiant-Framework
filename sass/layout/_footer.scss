@@ -1,0 +1,19 @@
+.footer {
+	background: $colour-dark;
+	color: $colour-light;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem;
+	text-align: center;
+
+	a {
+		color: $colour-light;
+
+		&:hover { color: orangered;	}
+	}
+
+	@include respond(phone) {
+		justify-content: initial;
+		flex-direction: column;
+	}
+}
