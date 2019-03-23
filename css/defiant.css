@@ -940,27 +940,24 @@ table.tbl--striped tbody tr:hover {
   }
 }
 
-.panel:nth-child(odd) {
+.component .panel:nth-child(odd) {
   margin: 5rem 0;
 }
-
-h3 ~ .panel {
+.component h3 ~ .panel {
   margin-top: 0 !important;
 }
-
-.card {
+.component .card {
   background: linear-gradient(#e0f2f1, #42a5f5);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin: 5rem 0 0;
   max-width: none;
 }
-.card__body {
+.component .card__body {
   text-align: left;
   width: 100%;
 }
-
-.panel {
+.component .panel {
   border-top: 0;
   border-color: #545b62;
 }

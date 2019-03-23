@@ -7,30 +7,33 @@
 	}
 }
 
-.panel {
-	&:nth-child(odd) {
-		margin: 5rem 0;
+.component {
+	
+	.panel {
+		&:nth-child(odd) {
+			margin: 5rem 0;
+		}
 	}
-}
-
-h3 ~ .panel {
-	margin-top: 0 !important;
-}
-
-.card {
-	background: linear-gradient(#e0f2f1, #42a5f5);
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	margin: 5rem 0 0;
-	max-width: none;
-
-	&__body {
-		text-align: left;
-		width: 100%;
+	
+	h3 ~ .panel {
+		margin-top: 0 !important;
 	}
-}
-
-.panel {
-	border-top: 0;
-	border-color: #545b62;
+	
+	.card {
+		background: linear-gradient(#e0f2f1, #42a5f5);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		margin: 5rem 0 0;
+		max-width: none;
+	
+		&__body {
+			text-align: left;
+			width: 100%;
+		}
+	}
+	
+	.panel {
+		border-top: 0;
+		border-color: #545b62;
+	}
 }
