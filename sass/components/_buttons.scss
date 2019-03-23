@@ -30,7 +30,7 @@
 		}
 	}
 
-	&.btn--expand {
+	&.btn--expand {		
 		&::before {
 			background: $colour-dark;
 			border-radius: .5rem;
@@ -48,6 +48,7 @@
 		&:hover::before {
 			opacity: 0;
 			transform: scaleX(1.2) scaleY(1.4);
+			z-index: 1;
 		}
 	}
 
@@ -192,6 +193,8 @@
 		outline: none;
 		animation: pulse 1s infinite;
 	}
+
+	@include respond(phone) { padding: 1.2rem 1rem;	}
 }
 
 form button,

@@ -18,5 +18,9 @@
 	}
 
 
-	&__body { padding: 2rem; }
+	&__body {
+		padding: 2rem;
+
+		@include respond(tablet-portrait) {	padding: 1rem; }
+	}
 }

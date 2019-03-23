@@ -18,11 +18,17 @@
 	&__body {
 		padding: 2rem;
 		text-align: center;
+
+		@include respond(tablet-portrait) {	padding: 0; }
 	}
 
 	&__heading {
 		font-size: 2rem;
 		font-weight: bold;
+	}
+
+	@include respond(tablet-portrait) {
+		padding: 1rem;
 	}
 
 	// &.card--horizontal {

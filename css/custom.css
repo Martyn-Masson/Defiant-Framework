@@ -58,8 +58,6 @@ body {
 .buttons .btn--pulse { margin: 1rem; }
 
 @media(max-width: 900px) {
-	main { width: 90%; }
-	section { padding: 8rem 0; }
 	.typography {
 		grid-template-columns: 1fr;
 		text-align: left;
@@ -79,9 +77,4 @@ body {
 		right: 3.25rem;
 	}
 	.thumbnails { grid-gap: 2rem; }
-}
-
-@media (max-width: 600px ) {
-	main { width: 100%; }
-	section { padding: 6rem 3rem; }
 }

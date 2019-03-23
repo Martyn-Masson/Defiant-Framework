@@ -176,6 +176,8 @@ h3 {
 .pre {
   font-family: monospace;
   font-size: 1.8rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .btn {
@@ -222,6 +224,7 @@ h3 {
 .btn.btn--expand:hover::before {
   opacity: 0;
   transform: scaleX(1.2) scaleY(1.4);
+  z-index: 1;
 }
 .btn.btn--outline {
   background: #eee;
@@ -356,6 +359,11 @@ h3 {
   outline: none;
   animation: pulse 1s infinite;
 }
+@media (max-width: 37.5em) {
+  .btn {
+    padding: 1.2rem 1rem;
+  }
+}
 
 form button,
 form .btn,
@@ -384,9 +392,19 @@ table .btn {
   padding: 2rem;
   text-align: center;
 }
+@media (max-width: 56.25em) {
+  .card__body {
+    padding: 0;
+  }
+}
 .card__heading {
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 56.25em) {
+  .card {
+    padding: 1rem;
+  }
 }
 
 .dropdown {
@@ -844,6 +862,11 @@ ol {
 .panel__body {
   padding: 2rem;
 }
+@media (max-width: 56.25em) {
+  .panel__body {
+    padding: 1rem;
+  }
+}
 
 table {
   border-collapse: collapse;
@@ -900,10 +923,21 @@ table.tbl--striped tbody tr:hover {
   margin: 0 auto 5rem;
   width: 80%;
 }
+@media (max-width: 56.25em) {
+  .main {
+    margin: auto;
+    width: 95%;
+  }
+}
 
 .header-component {
   margin: 10rem auto 0;
   width: 80%;
+}
+@media (max-width: 56.25em) {
+  .header-component {
+    width: 95%;
+  }
 }
 
 .panel:nth-child(odd) {
@@ -912,6 +946,23 @@ table.tbl--striped tbody tr:hover {
 
 h3 ~ .panel {
   margin-top: 0 !important;
+}
+
+.card {
+  background: linear-gradient(#e0f2f1, #42a5f5);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 5rem 0 0;
+  max-width: none;
+}
+.card__body {
+  text-align: left;
+  width: 100%;
+}
+
+.panel {
+  border-top: 0;
+  border-color: #545b62;
 }
 
 .header-home {
