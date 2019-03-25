@@ -375,7 +375,7 @@ table .btn {
 .card {
   background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
   margin: 0.75rem 0 1.5rem;
   position: relative;
   max-width: 35rem;
@@ -943,11 +943,10 @@ table.tbl--striped tbody tr:hover {
 .component .panel:nth-child(odd) {
   margin: 5rem 0;
 }
-.component h3 ~ .panel {
+.component h2 ~ .panel {
   margin-top: 0 !important;
 }
 .component .card {
-  background: linear-gradient(#e0f2f1, #42a5f5);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin: 5rem 0 0;
@@ -956,6 +955,9 @@ table.tbl--striped tbody tr:hover {
 .component .card__body {
   text-align: left;
   width: 100%;
+}
+.component .card .card__body > .card {
+  max-width: 35rem;
 }
 .component .panel {
   border-top: 0;

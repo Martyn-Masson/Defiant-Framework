@@ -15,12 +15,11 @@
 		}
 	}
 	
-	h3 ~ .panel {
+	h2 ~ .panel {
 		margin-top: 0 !important;
 	}
 	
 	.card {
-		background: linear-gradient(#e0f2f1, #42a5f5);
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 		margin: 5rem 0 0;
@@ -29,6 +28,10 @@
 		&__body {
 			text-align: left;
 			width: 100%;
+		}
+
+		.card__body > .card {
+			max-width: 35rem;
 		}
 	}
 	
