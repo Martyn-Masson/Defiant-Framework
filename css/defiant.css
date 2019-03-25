@@ -236,6 +236,7 @@ h3 {
   color: #eee;
 }
 .btn.btn--outline-primary {
+  background: #fff;
   border: 0.1rem solid #007bff;
   color: #007bff;
 }
@@ -244,6 +245,7 @@ h3 {
   color: #eee;
 }
 .btn.btn--outline-secondary {
+  background: #fff;
   border: 0.1rem solid #545b62;
   color: #545b62;
 }
@@ -252,6 +254,7 @@ h3 {
   color: #eee;
 }
 .btn.btn--outline-success {
+  background: #fff;
   border: 0.1rem solid #28a745;
   color: #28a745;
 }
@@ -260,6 +263,7 @@ h3 {
   color: #eee;
 }
 .btn.btn--outline-danger {
+  background: #fff;
   border: 0.1rem solid #dc3545;
   color: #dc3545;
 }
@@ -268,6 +272,7 @@ h3 {
   color: #eee;
 }
 .btn.btn--outline-warning {
+  background: #fff;
   border: 0.1rem solid #ffc107;
   color: #ffc107;
 }
@@ -276,6 +281,7 @@ h3 {
   color: #eee;
 }
 .btn.btn--outline-info {
+  background: #fff;
   border: 0.1rem solid #17a2b8;
   color: #17a2b8;
 }
