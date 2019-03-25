@@ -8,12 +8,6 @@ img {
 		border-radius: .4rem;
 		padding:.5rem;
 		max-width: 15rem;
-
-		&:hover {
-			box-shadow: 0 .4rem .5rem rgba($default-box-shadow, 0.75);
-			border-width: .3rem;
-			transform: scale(1.03);
-		}
 	}
 
 	&.img--avatar {
@@ -22,17 +16,12 @@ img {
 		height: 8rem;
 		padding:.3rem;
 		width: 8rem;
-
-		&:hover {
-			box-shadow: 0 .4rem .5rem rgba($default-box-shadow, 0.75);
-			border-width: .3rem;
-			transform: scale(1.03);
-		}
 	}
 
 	&.img--zoom {
 		border-radius: .4rem;
 		max-width: 15rem;
+		transition: transform .5s;
 
 		&:hover { transform: scale(1.5); }
 	}

@@ -596,11 +596,6 @@ img.img--thumbnail {
   padding: 0.5rem;
   max-width: 15rem;
 }
-img.img--thumbnail:hover {
-  box-shadow: 0 0.4rem 0.5rem rgba(80, 80, 80, 0.75);
-  border-width: 0.3rem;
-  transform: scale(1.03);
-}
 img.img--avatar {
   border: 0.1rem solid #ddd;
   border-radius: 50%;
@@ -608,14 +603,10 @@ img.img--avatar {
   padding: 0.3rem;
   width: 8rem;
 }
-img.img--avatar:hover {
-  box-shadow: 0 0.4rem 0.5rem rgba(80, 80, 80, 0.75);
-  border-width: 0.3rem;
-  transform: scale(1.03);
-}
 img.img--zoom {
   border-radius: 0.4rem;
   max-width: 15rem;
+  transition: transform 0.5s;
 }
 img.img--zoom:hover {
   transform: scale(1.5);
