@@ -53,7 +53,7 @@
 	}
 
 	&.btn--outline {
-		background: $colour-light;
+		background: #fff;
 		color: $colour-dark;
 		transition: all .3s ease-in;
 
@@ -63,7 +63,6 @@
 		}
 
 		&-primary {
-			background: $colour-light;
 			border: .1rem solid $bg-primary;
 			color: $bg-primary;
 
@@ -74,7 +73,6 @@
 		}
 
 		&-secondary {
-			background: $colour-light;
 			border: .1rem solid $bg-secondary;
 			color: $bg-secondary;
 
@@ -85,7 +83,6 @@
 		}
 
 		&-success {
-			background: $colour-light;
 			border: .1rem solid $bg-success;
 			color: $bg-success;
 
@@ -96,7 +93,6 @@
 		}
 
 		&-danger {
-			background: $colour-light;
 			border: .1rem solid $bg-danger;
 			color: $bg-danger;
 
@@ -107,7 +103,6 @@
 		}
 
 		&-warning {
-			background: $colour-light;
 			border: .1rem solid $bg-warning;
 			color: $bg-warning;
 
@@ -118,7 +113,6 @@
 		}
 
 		&-info {
-			background: $colour-light;
 			border: .1rem solid $bg-info;
 			color: $bg-info;
 
