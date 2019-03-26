@@ -1,18 +1,3 @@
-/*
-	0 - 600px = phone
-	600 - 900px = tablet portrait
-	900 - 1200px = tablet landscape
-	1200 - 1800px = normal styles apply
-	1800+ = big desktop
-
-	$breakpoint argument choices
-	- phone
-	- tablet-portrait
-	- tablet-landscape
-	- big-desktop
-
-	ORDER: Base + typography > general layout + grid > page layout > components
-*/
 *,
 *::before,
 *::after {
@@ -975,15 +960,6 @@ ol {
   color: #eee;
   transition: all 2s;
   clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
-}
-.header-home h1 {
-  animation: moveInBottom 2s;
-}
-.header-home p {
-  animation: moveInBottom 2s;
-}
-.header-home a {
-  animation: fadeIn 3s;
 }
 
 .home-section {
