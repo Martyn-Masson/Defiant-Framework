@@ -35,6 +35,9 @@
 
 	.dropdown-toggle::after {
 		font-family: "Material Icons";
+		-webkit-font-feature-settings: 'liga' 1;
+		-moz-font-feature-settings: 'liga' 1;
+		font-feature-settings: 'liga' 1;
 		content: "arrow_drop_down";
 		vertical-align: middle;
 	}

@@ -33,3 +33,17 @@ a {
 	color: $colour-dark;
 	text-decoration: none;
 }
+
+.material-icons {
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	-webkit-font-feature-settings: 'liga' 1;
+	-moz-font-feature-settings: 'liga' 1;
+	font-feature-settings: 'liga' 1;
+}

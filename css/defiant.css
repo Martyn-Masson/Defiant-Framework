@@ -55,6 +55,18 @@ a {
   text-decoration: none;
 }
 
+.material-icons {
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1;
+}
+
 @keyframes slideInLeft {
   0% {
     opacity: 0;
@@ -805,6 +817,9 @@ ol {
 }
 .navbar .dropdown-toggle::after {
   font-family: "Material Icons";
+  -webkit-font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1;
   content: "arrow_drop_down";
   vertical-align: middle;
 }
