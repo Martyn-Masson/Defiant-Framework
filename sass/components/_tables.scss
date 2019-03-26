@@ -1,4 +1,4 @@
-table {
+.table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-bottom: 2.5rem;
@@ -23,7 +23,7 @@ table {
 		width: 0.1%;
 	}
 
-	&.tbl--striped {
+	&.table--striped {
 		tbody tr:nth-child(odd) {
 			background: $colour-light-2;
 		}

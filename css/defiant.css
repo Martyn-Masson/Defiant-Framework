@@ -859,33 +859,33 @@ ol {
   }
 }
 
-table {
+.table {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 2.5rem;
   width: 100%;
 }
-table th,
-table td {
+.table th,
+.table td {
   border-bottom: 0.1rem solid #ddd;
   padding: 0.6rem;
   text-align: left;
 }
-table th:first-child,
-table td:first-child {
+.table th:first-child,
+.table td:first-child {
   padding-left: 0;
 }
-table tbody tr:hover {
+.table tbody tr:hover {
   background: #f8f8f8;
 }
-table td:last-child {
+.table td:last-child {
   white-space: nowrap;
   width: 0.1%;
 }
-table.tbl--striped tbody tr:nth-child(odd) {
+.table.table--striped tbody tr:nth-child(odd) {
   background: #ddd;
 }
-table.tbl--striped tbody tr:hover {
+.table.table--striped tbody tr:hover {
   background: #bbb;
 }
 
@@ -986,7 +986,7 @@ table.tbl--striped tbody tr:hover {
   max-width: initial;
 }
 
-.card__body i {
+.card__body i:not(.nav-toggle) {
   font-size: 8rem;
 }
 

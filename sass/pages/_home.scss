@@ -24,4 +24,4 @@
 }
 
 .components .card { max-width: initial; }
-.card__body i { font-size: 8rem; }
+.card__body i:not(.nav-toggle) { font-size: 8rem; }
