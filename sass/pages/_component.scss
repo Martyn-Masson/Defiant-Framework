@@ -39,4 +39,11 @@
 		border-top: 0;
 		border-color: #545b62;
 	}
+
+	.thumbnails {
+		display: grid;
+		grid-gap: 1rem 3rem;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		justify-items: center;
+	}
 }

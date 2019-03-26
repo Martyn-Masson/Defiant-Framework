@@ -48,13 +48,6 @@ body {
 	grid-gap: 3rem;
 }
 
-.thumbnails {
-	display: grid;
-    grid-gap: 1rem 3rem;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	/* justify-items: center; */
-}
-
 .buttons .btn--pulse { margin: 1rem; }
 
 @media(max-width: 900px) {
