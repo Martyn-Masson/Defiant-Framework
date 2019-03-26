@@ -14,20 +14,27 @@
 		});
 	});
 
-	dismissBtn.addEventListener("click", () => {
-		modal.style.display = "none";
-		modal__content.style.display = "none";
-	});
-	
-	closeModal.addEventListener("click", () => {
-		modal.style.display = "none";
-		modal__content.style.display = "none";
-	});
-
-	modal.addEventListener("click", (e) => {
-		if(e.target !== modal__content && e.target.parentNode !== modal__content) {
+	if(dismissBtn) {
+		dismissBtn.addEventListener("click", () => {
 			modal.style.display = "none";
 			modal__content.style.display = "none";
-		}
-	});
+		});
+	}
+	
+	if(closeModal) {
+		closeModal.addEventListener("click", () => {
+			modal.style.display = "none";
+			modal__content.style.display = "none";
+		});
+	}
+
+	if(modal) {
+		modal.addEventListener("click", (e) => {
+			if(e.target !== modal__content && e.target.parentNode !== modal__content) {
+				modal.style.display = "none";
+				modal__content.style.display = "none";
+			}
+		});
+	}
+	
 })(window);
