@@ -422,7 +422,7 @@ table .btn {
 }
 .dropdown-menu .dropdown-menu__link {
   display: block;
-  padding: 1rem 3.2rem;
+  padding: 1rem 2.2rem;
 }
 .dropdown-menu .dropdown-menu__link:not(:first-child) {
   border-top: 0.2rem solid #ccc;
