@@ -1,0 +1,22 @@
+.panel {
+	background: #fff;
+	border: .1rem solid #e2e2e2;
+	border-radius: .2rem;
+	margin: 2rem 0;
+
+	&__heading {
+		&.panel--primary { background: $bg-primary; }
+		&.panel--secondary { background: $bg-secondary; }
+		&.panel--success { background: $bg-success; }
+		&.panel--danger {	background: $bg-danger;	}
+		&.panel--warning { background: $bg-warning; }
+		&.panel--info { background: $bg-info;	}
+		background: $colour-light-4;
+		border-bottom: .1rem solid #e0e0e0;
+		color: #eee;
+		padding: .9rem 2rem;
+	}
+
+
+	&__body { padding: 2rem; }
+}
