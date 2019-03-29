@@ -196,6 +196,7 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.4s ease-in;
+  vertical-align: middle;
 }
 .btn.btn-levitate:hover {
   box-shadow: 0 1rem 2rem rgba(80, 80, 80, 0.4);
@@ -355,6 +356,18 @@ h3 {
 .btn.btn-pulse {
   outline: none;
   animation: pulse 1s infinite;
+}
+.btn.btn-small {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+}
+.btn.btn-large {
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
+}
+.btn i {
+  font-size: 1.8rem;
+  vertical-align: bottom;
 }
 @media (max-width: 37.5em) {
   .btn {

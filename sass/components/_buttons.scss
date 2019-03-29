@@ -17,6 +17,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all .4s ease-in;
+	vertical-align: middle;
 
 	&.btn-levitate {
 		&:hover {
@@ -192,6 +193,21 @@
 	&.btn-pulse {
 		outline: none;
 		animation: pulse 1s infinite;
+	}
+
+	&.btn-small {
+		font-size: 1rem;
+		padding: 1rem 1rem;
+	}
+
+	&.btn-large {
+		font-size: 1.6rem;
+		padding: 2rem 4rem;
+	}
+	
+	i {
+		font-size: 1.8rem;
+		vertical-align: bottom;
 	}
 
 	@include respond(phone) { padding: 1.2rem 1rem;	}
