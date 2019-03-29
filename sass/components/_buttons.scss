@@ -18,7 +18,7 @@
 	text-transform: uppercase;
 	transition: all .4s ease-in;
 
-	&.btn--levitate {
+	&.btn-levitate {
 		&:hover {
 			box-shadow: 0 1rem 2rem rgba($default-box-shadow, 0.4);
 			transform: translateY(-.3rem);
@@ -30,7 +30,7 @@
 		}
 	}
 
-	&.btn--expand {		
+	&.btn-expand {		
 		&::before {
 			background: $colour-dark;
 			border-radius: .5rem;
@@ -52,7 +52,7 @@
 		}
 	}
 
-	&.btn--outline {
+	&.btn-outline {
 		background: #fff;
 		color: $colour-dark;
 		transition: all .3s ease-in;
@@ -129,7 +129,7 @@
 		}
 	}
 
-	&.btn--primary {
+	&.btn-primary {
 		background: $bg-primary;
 		border: none;
 		color: $colour-light;
@@ -139,7 +139,7 @@
 		&::before { background: darken($bg-primary, 10%); }
 	}
 
-	&.btn--secondary {
+	&.btn-secondary {
 		background: $bg-secondary;
 		border: none;
 		color: $colour-light;
@@ -149,7 +149,7 @@
 		&::before { background: darken($bg-secondary, 10%); }
 	}
 
-	&.btn--success {
+	&.btn-success {
 		background: $bg-success;
 		border: none;
 		color: $colour-light;
@@ -159,7 +159,7 @@
 		&::before { background: darken($bg-success, 10%); }
 	}
 
-	&.btn--danger {
+	&.btn-danger {
 		background: $bg-danger;
 		border: none;
 		color: $colour-light;
@@ -169,7 +169,7 @@
 		&::before { background: darken($bg-danger, 10%); }
 	}
 
-	&.btn--warning {
+	&.btn-warning {
 		background: $bg-warning;
 		border: none;
 		color: $colour-light;
@@ -179,7 +179,7 @@
 		&::before { background: darken($bg-warning, 10%); }
 	}
 
-	&.btn--info {
+	&.btn-info {
 		background: $bg-info;
 		border: none;
 		color: $colour-light;
@@ -189,7 +189,7 @@
 		&::before { background: darken($bg-info, 10%); }
 	}
 
-	&.btn--pulse {
+	&.btn-pulse {
 		outline: none;
 		animation: pulse 1s infinite;
 	}

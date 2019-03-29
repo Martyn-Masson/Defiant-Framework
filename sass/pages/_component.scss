@@ -25,12 +25,12 @@
 		margin: 5rem 0 0;
 		max-width: none;
 	
-		&__body {
+		&-body {
 			text-align: left;
 			width: 100%;
 		}
 
-		.card__body > .card {
+		.card-body > .card {
 			max-width: 35rem;
 		}
 	}

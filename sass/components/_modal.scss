@@ -9,7 +9,7 @@
 	transition: all 1s;
 	z-index: 9999999999999;
 	
-	&__close {
+	&-close {
 		color: $colour-dark;
 		position: absolute;
 		top: 0;
@@ -22,7 +22,7 @@
 		&:hover { color: $bg-danger; }
 	}
 
-	&__content {
+	&-content {
 		animation: slideInLeft 1s;
 		background: $colour-light;
 		border-radius: .5rem;

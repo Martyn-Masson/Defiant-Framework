@@ -3,14 +3,14 @@ img {
 	height: auto;
 	max-width: 100%;
 
-	&.img--thumbnail {
+	&.img-thumbnail {
 		border: .1rem solid $colour-light-2;
 		border-radius: .4rem;
 		padding:.5rem;
 		max-width: 15rem;
 	}
 
-	&.img--avatar {
+	&.img-avatar {
 		border: .1rem solid $colour-light-2;
 		border-radius: 50%;
 		height: 8rem;
@@ -18,7 +18,7 @@ img {
 		width: 8rem;
 	}
 
-	&.img--zoom {
+	&.img-zoom {
 		border-radius: .4rem;
 		max-width: 15rem;
 		transition: transform .5s;

@@ -15,14 +15,14 @@
 		bottom: 0;
 	}
 
-	&__body {
+	&-body {
 		padding: 2rem;
 		text-align: center;
 
 		@include respond(tablet-portrait) {	padding: 0; }
 	}
 
-	&__heading {
+	&-heading {
 		font-size: 2rem;
 		font-weight: bold;
 	}
@@ -31,7 +31,7 @@
 		padding: 1rem;
 	}
 
-	// &.card--horizontal {
+	// &.card-horizontal {
 	// 	display: flex;
 	// 	justify-content: space-evenly;
 	// 	align-items: center;

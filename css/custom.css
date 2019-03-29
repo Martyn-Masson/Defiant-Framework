@@ -48,7 +48,7 @@ body {
 	grid-gap: 3rem;
 }
 
-.buttons .btn--pulse { margin: 1rem; }
+.buttons .btn-pulse { margin: 1rem; }
 
 @media(max-width: 900px) {
 	.typography {
@@ -61,11 +61,11 @@ body {
 		text-align: center;
 	}
 	.images img { margin: 0 auto; }
-	.navigation__button {
+	.navigation-button {
 		top: 3rem;
 		right: 3rem;
 	}
-	.navigation__background {
+	.navigation-background {
 		top: 3.25rem;
 		right: 3.25rem;
 	}

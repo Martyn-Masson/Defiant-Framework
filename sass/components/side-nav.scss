@@ -17,7 +17,7 @@
 		font-size: 2.5rem;
 		padding: 0 1rem 1rem;
 	}
-	&__link {
+	&-link {
 		align-items: center;
 		background: transparent;
 		border: none;
@@ -49,7 +49,7 @@
 	.submenu {
 		display: none;
 		
-		&__link {
+		&-link {
 			background: $colour-light;
 			border-top: .2rem solid $colour-dark;
 			display: block;
@@ -69,10 +69,10 @@
 	}
 
 	& .logo,
-	&__link {
+	&-link {
 		color: $colour-light;
 		padding: 1rem 2.5rem;
 	}
 
-	&--open { transform: translateX(0); }
+	&-open { transform: translateX(0); }
 }

@@ -23,7 +23,7 @@
 		width: 0.1%;
 	}
 
-	&.table--striped {
+	&.table-striped {
 		tbody tr:nth-child(odd) {
 			background: $colour-light-2;
 		}

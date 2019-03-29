@@ -19,9 +19,9 @@
 
 	& .logo,
 	.nav-toggle,
-	&__link { color: #eee; }
+	&-link { color: #eee; }
 
-	&__link {
+	&-link {
 		background: transparent;
 		border: none;
 		cursor: pointer;
@@ -42,7 +42,7 @@
 		vertical-align: middle;
 	}
 
-	&--fixed { position: fixed; }
+	&-fixed { position: fixed; }
 
 	@include respond(phone) {
 		:not(.logo) { display: none; }

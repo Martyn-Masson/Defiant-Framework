@@ -7,7 +7,7 @@
 	overlay.className = "overlay";
 	
 	function toggleOverlay() {
-		if(sideNav.classList.contains("side-nav--open")) {
+		if(sideNav.classList.contains("side-nav-open")) {
 			document.body.appendChild(overlay);
 		} else if(document.querySelector(".overlay") !==  null) {
 			document.body.removeChild(overlay);
@@ -16,14 +16,14 @@
 
 	document.addEventListener("keyup", (e) => {
 		if(e.keyCode == 27) {
-			sideNav.classList.toggle("side-nav--open");
+			sideNav.classList.toggle("side-nav-open");
 			toggleOverlay();
 		}
 	});
 	
 	if(navToggle) {
 		navToggle.addEventListener("click", () => {
-			sideNav.classList.toggle("side-nav--open");
+			sideNav.classList.toggle("side-nav-open");
 			toggleOverlay();
 		});
 	}
@@ -32,7 +32,7 @@
 		global.addEventListener("click", (e) => {
 			// If the target isn't the side-nav or the nav-toggle or the submenu icon
 			if((e.target != sideNav) && (e.target.parentNode != sideNav) && (e.target != navToggle) && (e.target.tagName !== "I")) {
-				sideNav.classList.remove("side-nav--open");
+				sideNav.classList.remove("side-nav-open");
 				toggleOverlay();
 			}
 		});
