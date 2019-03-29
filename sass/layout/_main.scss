@@ -1,9 +1,0 @@
-.main {
-	margin: 0 auto 5rem;
-	width: 80%;
-
-	@include respond(tablet-portrait) {
-		margin: auto;
-		width: 95%;
-	}
-}
