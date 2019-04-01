@@ -52,6 +52,7 @@
 	}
 
 	[type=checkbox] {
+		// Actual Checkbox
 		appearance: none;
 		background: #eee;
 		border: .1rem solid #ccc;
@@ -77,6 +78,7 @@
 				border: .1rem solid;
 				height: 2rem;
 				left: -2.5rem;
+				top: .4rem;
 				width: 2rem;
 			}
 
@@ -86,7 +88,7 @@
 				color: #eee;
 				height: .5rem;
 				left: -2rem;
-				top: .7rem;
+				top: 1rem;
 				transform: rotate(-45deg);
 				width: .9rem;
 			}
@@ -121,6 +123,7 @@
 				border-radius: 50%;
 				height: 2rem;
 				left: -2.5rem;
+				top: .4rem;
 				width: 2rem;
 			}
 
@@ -131,7 +134,7 @@
 				color: #eee;
 				height: .8rem;
 				left: -1.9rem;
-				top: .6rem;
+				top: 1rem;
 				width: .8rem;
 			}
 		}

@@ -529,6 +529,7 @@ table .btn {
   border: 0.1rem solid;
   height: 2rem;
   left: -2.5rem;
+  top: 0.4rem;
   width: 2rem;
 }
 .form-vertical [type=checkbox]:checked + label::after {
@@ -537,7 +538,7 @@ table .btn {
   color: #eee;
   height: 0.5rem;
   left: -2rem;
-  top: 0.7rem;
+  top: 1rem;
   transform: rotate(-45deg);
   width: 0.9rem;
 }
@@ -568,6 +569,7 @@ table .btn {
   border-radius: 50%;
   height: 2rem;
   left: -2.5rem;
+  top: 0.4rem;
   width: 2rem;
 }
 .form-vertical [type=radio]:checked + label::after {
@@ -577,7 +579,7 @@ table .btn {
   color: #eee;
   height: 0.8rem;
   left: -1.9rem;
-  top: 0.6rem;
+  top: 1rem;
   width: 0.8rem;
 }
 .form-vertical [type=submit] {
