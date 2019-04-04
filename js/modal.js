@@ -9,6 +9,9 @@
 	
 	btnModal.forEach((btn) => {
 		btn.addEventListener("click", () => {
+			if(modalContent.classList.contains("slide-down")) {
+				modalContent.classList.remove("slide-down");
+			}
 			modal.style.display = "block";
 			modalContent.style.display = "block";
 		});
@@ -16,23 +19,29 @@
 
 	if(dismissBtn) {
 		dismissBtn.addEventListener("click", () => {
-			modal.style.display = "none";
-			modalContent.style.display = "none";
+			modalContent.classList.add("slide-down");
+			setTimeout(() => {
+				modal.style.display = "none";
+			}, 1000);
 		});
 	}
 	
 	if(closeModal) {
 		closeModal.addEventListener("click", () => {
-			modal.style.display = "none";
-			modalContent.style.display = "none";
+			modalContent.classList.add("slide-down");
+			setTimeout(() => {
+				modal.style.display = "none";
+			}, 1000);
 		});
 	}
 
 	if(modal) {
 		modal.addEventListener("click", (e) => {
 			if(e.target !== modalContent && e.target.parentNode !== modalContent) {
-				modal.style.display = "none";
-				modalContent.style.display = "none";
+				modalContent.classList.add("slide-down");
+				setTimeout(() => {
+					modal.style.display = "none";
+				}, 1000);
 			}
 		});
 	}

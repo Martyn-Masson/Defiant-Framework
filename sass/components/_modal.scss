@@ -32,5 +32,8 @@
 		max-width: 50%;
 		padding: 2rem;
 		position: relative;
+		transition: all 3s;
 	}
 }
+
+.slide-down { animation: slideDown 3s; }

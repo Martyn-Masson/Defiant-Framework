@@ -79,6 +79,14 @@ a {
     box-shadow: none;
   }
 }
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200rem);
+  }
+}
 p {
   font-size: 1.6rem;
   margin: 1rem 0;
@@ -781,6 +789,11 @@ ol {
   max-width: 50%;
   padding: 2rem;
   position: relative;
+  transition: all 3s;
+}
+
+.slide-down {
+  animation: slideDown 3s;
 }
 
 .navbar {
