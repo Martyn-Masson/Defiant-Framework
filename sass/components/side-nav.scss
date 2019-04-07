@@ -21,13 +21,14 @@
 		align-items: center;
 		background: transparent;
 		border: none;
-		border-top: .2rem solid $colour-light;
+		border-bottom: .2rem solid $colour-light;
 		cursor: pointer;
 		display: flex;
 		font-family: inherit;
 		font-size: 1.6rem;
 		font-weight: inherit;
 		letter-spacing: inherit;
+		outline: none;
 		text-align: left;
 
 		&:hover {
@@ -51,7 +52,7 @@
 		
 		&-link {
 			background: $colour-light;
-			border-top: .2rem solid $colour-dark;
+			border-bottom: .2rem solid $colour-dark;
 			display: block;
 			padding: 1rem 3.2rem;
 			transition: all .3s ease-in-out;
@@ -75,4 +76,10 @@
 	}
 
 	&-open { transform: translateX(0); }
+
+	&.side-nav-fixed {
+		transform: translateX(0);
+		position: static;
+		min-width: 23rem;
+	}
 }

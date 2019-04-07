@@ -731,13 +731,14 @@ ol {
   align-items: center;
   background: transparent;
   border: none;
-  border-top: 0.2rem solid #eee;
+  border-bottom: 0.2rem solid #eee;
   cursor: pointer;
   display: flex;
   font-family: inherit;
   font-size: 1.6rem;
   font-weight: inherit;
   letter-spacing: inherit;
+  outline: none;
   text-align: left;
 }
 .side-nav-link:hover {
@@ -757,7 +758,7 @@ ol {
 }
 .side-nav .submenu-link {
   background: #eee;
-  border-top: 0.2rem solid #111;
+  border-bottom: 0.2rem solid #111;
   display: block;
   padding: 1rem 3.2rem;
   transition: all 0.3s ease-in-out;
@@ -776,6 +777,11 @@ ol {
 }
 .side-nav-open {
   transform: translateX(0);
+}
+.side-nav.side-nav-fixed {
+  transform: translateX(0);
+  position: static;
+  min-width: 23rem;
 }
 
 .modal {
