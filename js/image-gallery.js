@@ -4,7 +4,8 @@
 	var mainImage = document.querySelector(".image-gallery-main");
 	var images = document.querySelectorAll(".image-gallery img:not(:first-child)");
 	var imageOpacity = .6;	
-	images[0].style.opacity = imageOpacity;
+
+	if(images) { images[0].style.opacity = imageOpacity; }
 
 	gallery.addEventListener("click", function(e) {
 		var target = e.target;
