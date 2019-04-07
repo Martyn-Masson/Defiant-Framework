@@ -26,3 +26,15 @@ img {
 		&:hover { transform: scale(1.5); }
 	}
 }
+
+.image-gallery {
+	display: grid;
+	grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	justify-items: center;
+	
+	&-main {
+		grid-column: 1 / -1;
+		width: 100%;
+	}
+}

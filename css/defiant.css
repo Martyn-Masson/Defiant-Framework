@@ -87,6 +87,14 @@ a {
     transform: translateY(200rem);
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 p {
   font-size: 1.6rem;
   margin: 1rem 0;
@@ -183,6 +191,10 @@ h3 {
   font-size: 1.8rem;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
 }
 
 .btn {
@@ -630,6 +642,17 @@ img.img-zoom {
 }
 img.img-zoom:hover {
   transform: scale(1.5);
+}
+
+.image-gallery {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+}
+.image-gallery-main {
+  grid-column: 1/-1;
+  width: 100%;
 }
 
 ul li,
