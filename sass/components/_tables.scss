@@ -3,7 +3,7 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-bottom: 2.5rem;
-	table-layout: fixed;
+	table-layout: auto;
 	width: 100%;
 
 	tr {
@@ -15,7 +15,7 @@
 	th,
 	td {
 		padding: .85rem;
-		text-align: center;
+		text-align: left;
 	}
 
 	th {
@@ -23,7 +23,7 @@
 		text-transform: uppercase;
 	}
 
-	@include respond(phone) {
+	@include respond(tablet-portrait) {
 		& {	border: none; }
 		thead {
 			border: none;
@@ -47,10 +47,12 @@
 			display: block;
 			font-size: 1.3rem;
 			text-align: right;
+			display: flex;
+			justify-content: space-between;
 
 			&::before {
 				content: attr(data-label);
-				float: left;
+				// float: left;
 				font-weight: bold;
 				text-transform: uppercase;
 			}

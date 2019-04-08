@@ -927,7 +927,7 @@ ol {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 2.5rem;
-  table-layout: fixed;
+  table-layout: auto;
   width: 100%;
 }
 .table tr {
@@ -938,13 +938,13 @@ ol {
 .table th,
 .table td {
   padding: 0.85rem;
-  text-align: center;
+  text-align: left;
 }
 .table th {
   font-size: 1.35rem;
   text-transform: uppercase;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .table {
     border: none;
   }
@@ -968,10 +968,11 @@ ol {
     display: block;
     font-size: 1.3rem;
     text-align: right;
+    display: flex;
+    justify-content: space-between;
   }
   .table td::before {
     content: attr(data-label);
-    float: left;
     font-weight: bold;
     text-transform: uppercase;
   }
