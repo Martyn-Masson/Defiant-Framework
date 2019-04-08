@@ -19,7 +19,7 @@
 			sideNav.classList.toggle("side-nav-open");
 			toggleOverlay();
 		}
-	});
+	});	
 	
 	if(navToggle) {
 		navToggle.addEventListener("click", () => {

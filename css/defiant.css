@@ -776,12 +776,18 @@ ol {
   padding: 1rem 2.5rem;
 }
 .side-nav-open {
-  transform: translateX(0);
+  transform: translateX(0) !important;
 }
 .side-nav.side-nav-fixed {
   transform: translateX(0);
   position: static;
   min-width: 23rem;
+}
+@media (max-width: 37.5em) {
+  .side-nav.side-nav-fixed {
+    transform: translateX(-40rem);
+    position: fixed;
+  }
 }
 
 .modal {

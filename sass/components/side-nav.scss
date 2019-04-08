@@ -75,11 +75,16 @@
 		padding: 1rem 2.5rem;
 	}
 
-	&-open { transform: translateX(0); }
+	&-open { transform: translateX(0) !important; }
 
 	&.side-nav-fixed {
 		transform: translateX(0);
 		position: static;
 		min-width: 23rem;
+
+		@include respond(phone) {
+			transform: translateX(-40rem);
+			position: fixed;
+		}
 	}
 }
