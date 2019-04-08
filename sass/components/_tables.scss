@@ -1,31 +1,69 @@
 .table {
+	border: .1rem solid #ccc;
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-bottom: 2.5rem;
+	table-layout: fixed;
 	width: 100%;
+
+	tr {
+		background: #fff;
+		border: .1rem solid #ddd;
+		padding: .6rem;
+	}
 
 	th,
 	td {
-		border-bottom: .1rem solid $colour-light-2;
-		padding: .6rem;
-		text-align: left;
+		padding: .85rem;
+		text-align: center;
 	}
 
-	th:first-child,
-	td:first-child { padding-left: 0; }
-
-	tbody tr:hover {
-		background: $colour-light-3;
+	th {
+		font-size: 1.35rem;
+		text-transform: uppercase;
 	}
 
-	td:last-child {
-		white-space:nowrap;
-		width: 0.1%;
+	@include respond(phone) {
+		& {	border: none; }
+		thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: .1rem;
+			margin: -.1rem;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: .1rem;
+		}
+
+		tr {
+			border-bottom: .3rem solid #ddd;
+			display: block;
+			margin-bottom: 1rem;
+		}
+
+		td {
+			border-bottom: .1rem solid #ddd;
+			display: block;
+			font-size: 1.3rem;
+			text-align: right;
+
+			&::before {
+				content: attr(data-label);
+				float: left;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			&:last-child { border-bottom: 0; }
+		}
 	}
+
+	tbody tr:hover { background: $colour-light-3; }
 
 	&.table-striped {
 		tbody tr:nth-child(odd) {
-			background: $colour-light-2;
+			background: $colour-light;
 		}
 
 		tbody tr:hover {

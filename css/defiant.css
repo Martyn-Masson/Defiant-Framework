@@ -923,30 +923,67 @@ ol {
 }
 
 .table {
+  border: 0.1rem solid #ccc;
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 2.5rem;
+  table-layout: fixed;
   width: 100%;
+}
+.table tr {
+  background: #fff;
+  border: 0.1rem solid #ddd;
+  padding: 0.6rem;
 }
 .table th,
 .table td {
-  border-bottom: 0.1rem solid #ddd;
-  padding: 0.6rem;
-  text-align: left;
+  padding: 0.85rem;
+  text-align: center;
 }
-.table th:first-child,
-.table td:first-child {
-  padding-left: 0;
+.table th {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+}
+@media (max-width: 37.5em) {
+  .table {
+    border: none;
+  }
+  .table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 0.1rem;
+    margin: -0.1rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.1rem;
+  }
+  .table tr {
+    border-bottom: 0.3rem solid #ddd;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .table td {
+    border-bottom: 0.1rem solid #ddd;
+    display: block;
+    font-size: 1.3rem;
+    text-align: right;
+  }
+  .table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .table td:last-child {
+    border-bottom: 0;
+  }
 }
 .table tbody tr:hover {
   background: #f8f8f8;
 }
-.table td:last-child {
-  white-space: nowrap;
-  width: 0.1%;
-}
 .table.table-striped tbody tr:nth-child(odd) {
-  background: #ddd;
+  background: #eee;
 }
 .table.table-striped tbody tr:hover {
   background: #bbb;
