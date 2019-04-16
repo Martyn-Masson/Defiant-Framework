@@ -19,17 +19,10 @@
 			padding: 1rem 2.2rem;
 
 			&:not(:first-child) { border-top: .2rem solid #ccc; }
-
-			&:nth-child(odd):hover {
-				background: $bg-danger;
-				color: $colour-light;
+			&:hover {
+				background: $colour-light-4;
+				color: #fff;
 			}
-
-			&:nth-child(even):hover {
-				background: $bg-success;
-				color: $colour-light;
-			}
-
 			&:last-child:hover {
 				border-bottom-left-radius: .5rem;
 				border-bottom-right-radius: .5rem;

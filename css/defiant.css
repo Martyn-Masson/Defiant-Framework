@@ -460,13 +460,9 @@ table .btn {
 .dropdown-menu .dropdown-menu-link:not(:first-child) {
   border-top: 0.2rem solid #ccc;
 }
-.dropdown-menu .dropdown-menu-link:nth-child(odd):hover {
-  background: #dc3545;
-  color: #eee;
-}
-.dropdown-menu .dropdown-menu-link:nth-child(even):hover {
-  background: #28a745;
-  color: #eee;
+.dropdown-menu .dropdown-menu-link:hover {
+  background: #bbb;
+  color: #fff;
 }
 .dropdown-menu .dropdown-menu-link:last-child:hover {
   border-bottom-left-radius: 0.5rem;
@@ -741,10 +737,6 @@ ol {
   outline: none;
   text-align: left;
 }
-.side-nav-link:hover {
-  background: #007bff;
-  color: #eee;
-}
 .side-nav-link:last-child {
   border-bottom: 0.2rem solid #eee;
 }
@@ -763,13 +755,9 @@ ol {
   padding: 1rem 3.2rem;
   transition: all 0.3s ease-in-out;
 }
-.side-nav .submenu-link:nth-child(odd):hover {
-  background: #dc3545;
-  color: #eee;
-}
-.side-nav .submenu-link:nth-child(even):hover {
-  background: #28a745;
-  color: #eee;
+.side-nav .submenu-link:hover {
+  background: #bbb;
+  color: #fff;
 }
 .side-nav .logo, .side-nav-link {
   color: #eee;

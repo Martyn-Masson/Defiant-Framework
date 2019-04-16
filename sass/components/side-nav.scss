@@ -31,13 +31,7 @@
 		outline: none;
 		text-align: left;
 
-		&:hover {
-			background: $bg-primary;
-			color: $colour-light;
-		}
-
 		&:last-child { border-bottom: .2rem solid $colour-light; }
-		
 	}
 	
 	.submenu-toggle .material-icons {
@@ -57,14 +51,9 @@
 			padding: 1rem 3.2rem;
 			transition: all .3s ease-in-out;
 
-			&:nth-child(odd):hover {
-				background: $bg-danger;
-				color: $colour-light;
-			}
-
-			&:nth-child(even):hover {
-				background: $bg-success;
-				color: $colour-light;
+			&:hover {
+				background: $colour-light-4;
+				color: #fff;
 			}
 		}
 	}
