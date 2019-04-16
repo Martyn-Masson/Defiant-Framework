@@ -910,6 +910,32 @@ ol {
   }
 }
 
+.slideshow {
+  max-width: 100rem;
+  margin: auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.slideshow img {
+  border-radius: 50%;
+  margin: auto;
+  height: 13rem;
+  width: 13rem;
+}
+.slideshow .slide-dot {
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5rem;
+  margin: 1rem 0.2rem 0;
+  transition: background 0.6s ease;
+  width: 1.5rem;
+}
+.slideshow .slide-dot:hover {
+  background: orangered;
+}
+
 .table {
   border: 0.1rem solid #ccc;
   border-collapse: collapse;

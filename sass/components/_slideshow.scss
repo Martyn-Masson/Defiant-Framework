@@ -1,0 +1,26 @@
+.slideshow {
+	max-width: 100rem;
+	margin: auto;
+	padding: 0 2rem;
+	text-align: center;
+
+	img {
+		border-radius: 50%;
+		margin: auto;
+		height: 13rem;
+		width: 13rem;
+	}
+
+	.slide-dot {
+		background: #bbb;
+		border-radius: 50%;
+		cursor: pointer;
+		display: inline-block;
+		height: 1.5rem;
+		margin: 1rem .2rem 0;
+		transition: background .6s ease;
+		width: 1.5rem;
+
+		&:hover { background: orangered; }
+	}
+}
